@@ -71,7 +71,23 @@ Descrição do cenário onde o sistema deverá funcionar.
 
 21 O cliente deverá ser avisado a cada passo do procedimento que seu animal esteja fazendo.
 
-22 A clínica vende itens de lazer animal. // fazer ate a 30
+22 A clínica vende itens de lazer animal.
+
+23 Permitir que os clientes agendem consultas e acompanhem o status do atendimento online.
+
+24 Enviar lembretes de consultas e atualizações sobre o status do atendimento via SMS ou email.
+
+25 O sistema deve manter um histórico detalhado de todos os atendimentos realizados para cada animal, incluindo diagnósticos, tratamentos e medicamentos prescritos.
+
+26 O sistema deve gerar relatórios gerenciais para auxiliar na tomada de decisões, como relatórios de atendimentos, vendas de produtos e serviços, e controle de estoque.
+
+27 O sistema deve permitir o controle de estoque de medicamentos, rações e outros produtos vendidos na clínica, alertando quando os níveis estiverem baixos.
+
+28 O sistema deve permitir que os clientes deixem feedback sobre os serviços prestados, ajudando a melhorar a qualidade do atendimento.
+
+29 O sistema deve oferecer um canal de suporte ao cliente, como um chat online ou um sistema de tickets, para resolver dúvidas e problemas de forma eficiente.
+
+30 Cadastro de Vacinas: O sistema deve permitir o registro das vacinas que cada animal recebeu, com datas e tipos de vacina.
 
 # 3. Visão geral do sistema
 
