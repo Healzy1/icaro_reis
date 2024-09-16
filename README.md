@@ -71,7 +71,7 @@ Descrição do cenário onde o sistema deverá funcionar.
 
 21 O cliente deverá ser avisado a cada passo do procedimento que seu animal esteja fazendo.
 
-22 A clínica vende itens de lazer animal.
+22 A clínica vende itens de lazer animal. // fazer ate a 30
 
 # 3. Visão geral do sistema
 
