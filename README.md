@@ -87,7 +87,7 @@ Descrição do cenário onde o sistema deverá funcionar.
 
 29 O sistema deve oferecer um canal de suporte ao cliente, como um chat online ou um sistema de tickets, para resolver dúvidas e problemas de forma eficiente.
 
-30 Cadastro de Vacinas: O sistema deve permitir o registro das vacinas que cada animal recebeu, com datas e tipos de vacina.
+30 O sistema deve permitir o registro das vacinas que cada animal recebeu, com datas e tipos de vacina.
 
 # 3. Visão geral do sistema
 
