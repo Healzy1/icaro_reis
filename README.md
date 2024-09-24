@@ -9,7 +9,8 @@ Pagina da disciplina Engenharia de Software
 - [4. Diagrama ER](#4-diagrama-er)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
 - [6. Casos de uso](#6-casos-de-uso)
-  - [6.1. Histórias de usuário](#61-histórias-de-usuário)
+  - [6.1 Casos de Uso](#61-casos-de-uso)
+  - [6.2. Histórias de usuário](#62-histórias-de-usuário)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
@@ -352,7 +353,11 @@ classDiagram
 
 # 6. Casos de uso
 
-## 6.1. Histórias de usuário
+## 6.1 Casos de Uso
+
+![Casos de Uso](https://raw.githubusercontent.com/Healzy1/icaro_reis/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACXFJJZ4UC76H37MQZYHDGXQZXTLWMA)
+
+## 6.2. Histórias de usuário
 
 # 7. Diagrama de componentes
 
