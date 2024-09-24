@@ -11,6 +11,7 @@ Pagina da disciplina Engenharia de Software
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1 Casos de Uso](#61-casos-de-uso)
   - [6.2. Histórias de usuário](#62-histórias-de-usuário)
+    - [Histórias de Usuário](#histórias-de-usuário)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
@@ -358,6 +359,96 @@ classDiagram
 ![Casos de Uso](https://raw.githubusercontent.com/Healzy1/icaro_reis/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACXFJJZ4UC76H37MQZYHDGXQZXTLWMA)
 
 ## 6.2. Histórias de usuário
+
+### Histórias de Usuário
+
+1. **Cadastro de Clientes e Animais**
+   - Como cliente, eu quero cadastrar meus dados pessoais e os dados dos meus animais (gato ou cachorro) para que eu possa agendar atendimentos e acessar os serviços da clínica.
+
+2. **Informar Condições do Animal**
+   - Como cliente, eu quero informar as condições de saúde nas quais meu animal chega à clínica para que o veterinário tenha informações precisas sobre o estado atual do animal.
+
+3. **Informar Tipo de Ração**
+   - Como cliente, eu quero informar o tipo de ração que meu animal come para que a clínica possa ajustar os cuidados de acordo com a alimentação dele.
+
+4. **Informar Hábitos do Animal**
+   - Como cliente, eu quero informar os hábitos do meu animal para que o veterinário tenha uma visão completa do comportamento e das rotinas dele.
+
+5. **Atendimento por Vários Veterinários**
+   - Como veterinário, eu quero que cada animal possa ser atendido por mais de um veterinário, garantindo a continuidade e qualidade dos cuidados.
+
+6. **Agendamento por Agenda do Dia**
+   - Como cliente, eu quero que meu animal seja atendido de acordo com a agenda disponível do dia, garantindo uma consulta eficiente.
+
+7. **Ficha e Prontuário do Animal**
+   - Como sistema, eu devo gerar uma ficha e um prontuário para cada animal atendido, permitindo que o veterinário registre todas as observações e diagnósticos.
+
+8. **Marcar Horários Futuros**
+   - Como cliente, eu quero marcar horários de atendimento futuro para garantir que o meu animal tenha uma consulta agendada previamente.
+
+9. **Receita para o Animal**
+   - Como veterinário, eu quero emitir uma receita para o animal, caso necessário, para que o dono possa adquirir medicamentos adequados.
+
+10. **Atendimento por Atendente**
+    - Como cliente, eu quero ser atendido por um atendente assim que chego à clínica para ser direcionado ao próximo passo do atendimento.
+
+11. **Verificar Disponibilidade na Agenda**
+    - Como atendente, eu quero verificar a disponibilidade de veterinários na agenda para agendar ou direcionar consultas de forma eficiente.
+
+12. **Fila de Espera**
+    - Como atendente, eu quero colocar o cliente e seu animal na fila de espera caso não haja veterinário disponível no momento, garantindo o atendimento em ordem.
+
+13. **Levar Cliente ao Veterinário**
+    - Como atendente, eu quero levar o cliente e seu animal até o veterinário, facilitando o processo de atendimento.
+
+14. **Entrevista com o Cliente**
+    - Como veterinário, eu quero realizar uma entrevista com o dono do animal para obter informações detalhadas sobre o estado e comportamento do animal.
+
+15. **Formulário de Entrevista**
+    - Como sistema, eu quero registrar as informações da entrevista em um formulário, facilitando o armazenamento e análise dos dados pelo veterinário.
+
+16. **Exame e Prontuário**
+    - Como veterinário, eu quero examinar o animal e anotar minhas observações no prontuário, garantindo que todas as informações estejam documentadas.
+
+17. **Receita do Animal**
+    - Como veterinário, eu quero prescrever uma receita para o animal, quando necessário, para indicar o tratamento adequado.
+
+18. **Venda de Medicamentos Genéricos**
+    - Como cliente, eu quero poder comprar medicamentos genéricos na clínica para facilitar o tratamento do meu animal.
+
+19. **Venda de Rações de Tratamento**
+    - Como cliente, eu quero poder comprar rações de tratamento na clínica para atender às necessidades alimentares especiais do meu animal.
+
+20. **Aviso ao Cliente sobre o Procedimento**
+    - Como cliente, eu quero ser avisado a cada passo do procedimento que meu animal esteja fazendo, para acompanhar o progresso e entender o que está acontecendo.
+
+21. **Venda de Itens de Lazer**
+    - Como cliente, eu quero poder comprar itens de lazer para o meu animal na clínica, como brinquedos e acessórios.
+
+22. **Agendamento de Consultas e Acompanhamento Online**
+    - Como cliente, eu quero poder agendar consultas e acompanhar o status do atendimento online para maior conveniência e controle.
+
+23. **Lembretes de Consultas via SMS/Email**
+    - Como cliente, eu quero receber lembretes de consultas e atualizações sobre o status do atendimento via SMS ou email para não perder compromissos importantes.
+
+24. **Histórico Detalhado de Atendimentos**
+    - Como sistema, eu quero manter um histórico detalhado de todos os atendimentos realizados para cada animal, incluindo diagnósticos, tratamentos e medicamentos prescritos, para referência futura.
+
+25. **Relatórios Gerenciais**
+    - Como administrador da clínica, eu quero gerar relatórios gerenciais de atendimentos, vendas e controle de estoque para tomar decisões estratégicas com base em dados precisos.
+
+26. **Controle de Estoque**
+    - Como sistema, eu quero controlar o estoque de medicamentos, rações e outros produtos vendidos na clínica, alertando quando os níveis estiverem baixos, para evitar falta de produtos.
+
+27. **Feedback dos Clientes**
+    - Como cliente, eu quero deixar feedback sobre os serviços prestados, ajudando a clínica a melhorar a qualidade do atendimento.
+
+28. **Suporte ao Cliente**
+    - Como cliente, eu quero acessar um canal de suporte, como chat online ou sistema de tickets, para resolver dúvidas e problemas de forma eficiente.
+
+29. **Registro de Vacinas**
+    - Como sistema, eu quero registrar as vacinas que cada animal recebeu, com datas e tipos de vacina, para manter o histórico de vacinação atualizado.
+
 
 # 7. Diagrama de componentes
 
