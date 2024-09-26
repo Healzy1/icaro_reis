@@ -356,7 +356,7 @@ classDiagram
 
 ## 6.1 Casos de Uso
 
-![Casos de Uso](https://raw.githubusercontent.com/Healzy1/icaro_reis/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACXFJJZ4VRQKL55AJTNBFM2KZXUYW3Q)
+![Casos de Uso](https://github.com/Healzy1/icaro_reis/blob/1934f20b8fc0ed582510dbbcbf369bee00fe642d/casos_de_uso.png)
 
 ## 6.2. Histórias de usuário
 
