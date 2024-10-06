@@ -18,7 +18,9 @@ Pagina da disciplina Engenharia de Software
   - [9.1 Login](#91-login)
   - [9.2 Tela Default - Dashboard](#92-tela-default---dashboard)
   - [9.3 Relatórios de Clientes](#93-relatórios-de-clientes)
-  - [9.3 Registro de Clientes](#93-registro-de-clientes)
+    - [9.3.1 Registro de Clientes](#931-registro-de-clientes)
+  - [9.5 Relatórios de Atendente](#95-relatórios-de-atendente)
+  - [9.4 Registro de Atendente](#94-registro-de-atendente)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
@@ -472,9 +474,17 @@ classDiagram
 
 ![Relatórios de Clientes]()
 
-## 9.3 Registro de Clientes
+### 9.3.1 Registro de Clientes
 
 ![Registro de Clientes]()
+
+## 9.5 Relatórios de Atendente
+
+![Relatórios de Atendente]()
+
+## 9.4 Registro de Atendente
+
+![Registro de Atendente]()
 
 # 10. Diagrama de navegação de telas
 
