@@ -15,6 +15,10 @@ Pagina da disciplina Engenharia de Software
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
+  - [9.1 Login](#91-login)
+  - [9.2 Tela Default - Dashboard](#92-tela-default---dashboard)
+  - [9.3 Relatórios de Clientes](#93-relatórios-de-clientes)
+  - [9.3 Registro de Clientes](#93-registro-de-clientes)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
@@ -455,8 +459,22 @@ classDiagram
 # 8. Diagrama de implantação
 
 # 9. Protótipo de telas
-**Login**
+
+## 9.1 Login
+
 ![Login](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/login.png)
+
+## 9.2 Tela Default - Dashboard
+
+![Tela Deafault - Dashboard]()
+
+## 9.3 Relatórios de Clientes
+
+![Relatórios de Clientes]()
+
+## 9.3 Registro de Clientes
+
+![Registro de Clientes]()
 
 # 10. Diagrama de navegação de telas
 
