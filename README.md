@@ -456,6 +456,8 @@ classDiagram
 
 # 9. Protótipo de telas
 
+![Casos de Uso]()
+
 # 10. Diagrama de navegação de telas
 
 # 11. Pilha tecnológica
