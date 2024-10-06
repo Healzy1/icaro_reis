@@ -456,7 +456,7 @@ classDiagram
 
 # 9. Protótipo de telas
 
-![Casos de Uso]()
+![Casos de Uso](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/login.png)
 
 # 10. Diagrama de navegação de telas
 
