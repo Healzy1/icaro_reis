@@ -19,8 +19,8 @@ Pagina da disciplina Engenharia de Software
   - [9.2 Tela Default - Dashboard](#92-tela-default---dashboard)
   - [9.3 Relatórios de Clientes](#93-relatórios-de-clientes)
     - [9.3.1 Registro de Clientes](#931-registro-de-clientes)
-  - [9.5 Relatórios de Atendente](#95-relatórios-de-atendente)
-  - [9.4 Registro de Atendente](#94-registro-de-atendente)
+  - [9.4 Relatórios de Atendente](#94-relatórios-de-atendente)
+    - [9.4.1 Registro de Atendente](#941-registro-de-atendente)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
@@ -468,23 +468,23 @@ classDiagram
 
 ## 9.2 Tela Default - Dashboard
 
-![Tela Deafault - Dashboard]()
+![Tela Deafault - Dashboard](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/dashboard.png)
 
 ## 9.3 Relatórios de Clientes
 
-![Relatórios de Clientes]()
+![Relatórios de Clientes](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_cliente.png)
 
 ### 9.3.1 Registro de Clientes
 
-![Registro de Clientes]()
+![Registro de Clientes](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_cliente.png)
 
-## 9.5 Relatórios de Atendente
+## 9.4 Relatórios de Atendente
 
-![Relatórios de Atendente]()
+![Relatórios de Atendente](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_atendente.png)
 
-## 9.4 Registro de Atendente
+### 9.4.1 Registro de Atendente
 
-![Registro de Atendente]()
+![Registro de Atendente](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_atendente.png)
 
 # 10. Diagrama de navegação de telas
 
