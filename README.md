@@ -17,10 +17,12 @@ Pagina da disciplina Engenharia de Software
 - [9. Protótipo de telas](#9-protótipo-de-telas)
   - [9.1 Login](#91-login)
   - [9.2 Tela Default - Dashboard](#92-tela-default---dashboard)
-  - [9.3 Relatórios de Clientes](#93-relatórios-de-clientes)
+  - [9.3 Relatório de Clientes](#93-relatório-de-clientes)
     - [9.3.1 Registro de Clientes](#931-registro-de-clientes)
-  - [9.4 Relatórios de Atendente](#94-relatórios-de-atendente)
+  - [9.4 Relatório de Atendente](#94-relatório-de-atendente)
     - [9.4.1 Registro de Atendente](#941-registro-de-atendente)
+  - [9.5 Relatório de Animais](#95-relatório-de-animais)
+    - [9.5.1 Registro de Animais](#951-registro-de-animais)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
@@ -470,21 +472,31 @@ classDiagram
 
 ![Tela Deafault - Dashboard](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/dashboard.png)
 
-## 9.3 Relatórios de Clientes
+## 9.3 Relatório de Clientes
 
-![Relatórios de Clientes](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_cliente.png)
+![Relatório de Clientes](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_cliente.png)
 
 ### 9.3.1 Registro de Clientes
 
 ![Registro de Clientes](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_cliente.png)
 
-## 9.4 Relatórios de Atendente
+## 9.4 Relatório de Atendente
 
-![Relatórios de Atendente](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_atendente.png)
+![Relatório de Atendente](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_atendente.png)
 
 ### 9.4.1 Registro de Atendente
 
 ![Registro de Atendente](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_atendente.png)
+
+## 9.5 Relatório de Animais
+
+![Relatório de Animais]()
+
+### 9.5.1 Registro de Animais
+
+![Registro de AtendenAnimaiste]()
+
+etcetc
 
 # 10. Diagrama de navegação de telas
 
