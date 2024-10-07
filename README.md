@@ -601,7 +601,7 @@ classDiagram
 
 ## 9.16 Alterar Senha
 
-![Alterar Senha](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/dashboard_inMenu.png)
+![Alterar Senha](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/alterar_senha.png)
 
 ## 9.17 Usuários
 
