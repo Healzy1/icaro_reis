@@ -23,6 +23,16 @@ Pagina da disciplina Engenharia de Software
     - [9.4.1 Registro de Atendente](#941-registro-de-atendente)
   - [9.5 Relatório de Animais](#95-relatório-de-animais)
     - [9.5.1 Registro de Animais](#951-registro-de-animais)
+  - [9.6 Relatório de Lazer](#96-relatório-de-lazer)
+    - [9.6.1 Registro de Lazer](#961-registro-de-lazer)
+  - [9.7 Relatório de Ração](#97-relatório-de-ração)
+    - [9.7.1 Registro de Ração](#971-registro-de-ração)
+  - [9.8 Relatório de Consultas](#98-relatório-de-consultas)
+    - [9.8.1 Registro de Consultas](#981-registro-de-consultas)
+  - [9.9 Relatório de Feedbacks](#99-relatório-de-feedbacks)
+    - [9.9.1 Registro de Feedbacks](#991-registro-de-feedbacks)
+  - [9.10 Relatório de Medicamentos](#910-relatório-de-medicamentos)
+    - [9.10.1 Registro de Medicamentos](#9101-registro-de-medicamentos)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
@@ -490,13 +500,51 @@ classDiagram
 
 ## 9.5 Relatório de Animais
 
-![Relatório de Animais]()
+![Relatório de Animais](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_animais.png)
 
 ### 9.5.1 Registro de Animais
 
-![Registro de AtendenAnimaiste]()
+![Registro de AtendenAnimaiste](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_animais.png)
 
-etcetc
+## 9.6 Relatório de Lazer
+
+![Relatório de Lazer](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_lazer.png)
+
+### 9.6.1 Registro de Lazer
+
+![Registro de Lazer](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_lazer.png)
+
+## 9.7 Relatório de Ração
+
+![Relatório de Ração](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_racao.png)
+
+### 9.7.1 Registro de Ração
+
+![Registro de Ração](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_racao.png)
+
+## 9.8 Relatório de Consultas
+
+![Relatório de Consultas](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_consultas.png)
+
+### 9.8.1 Registro de Consultas
+
+![Registro de Consultas](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_consultas.png)
+
+## 9.9 Relatório de Feedbacks
+
+![Relatório de Feedbacks](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_feedback.png)
+
+### 9.9.1 Registro de Feedbacks
+
+![Registro de Feedbacks](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_feedback.png)
+
+## 9.10 Relatório de Medicamentos
+
+![Relatório de Medicamentos](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_medicamento.png)
+
+### 9.10.1 Registro de Medicamentos
+
+![Registro de Medicamentos](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_medicamento.png)
 
 # 10. Diagrama de navegação de telas
 
