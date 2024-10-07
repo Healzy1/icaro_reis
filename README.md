@@ -23,8 +23,8 @@ Pagina da disciplina Engenharia de Software
     - [9.4.1 Registro de Atendente](#941-registro-de-atendente)
   - [9.5 Relatório de Animais](#95-relatório-de-animais)
     - [9.5.1 Registro de Animais](#951-registro-de-animais)
-  - [9.6 Relatório de Lazer](#96-relatório-de-lazer)
-    - [9.6.1 Registro de Lazer](#961-registro-de-lazer)
+  - [9.6 Relatório de Item Lazer](#96-relatório-de-item-lazer)
+    - [9.6.1 Registro de Item Lazer](#961-registro-de-item-lazer)
   - [9.7 Relatório de Ração](#97-relatório-de-ração)
     - [9.7.1 Registro de Ração](#971-registro-de-ração)
   - [9.8 Relatório de Consultas](#98-relatório-de-consultas)
@@ -33,6 +33,21 @@ Pagina da disciplina Engenharia de Software
     - [9.9.1 Registro de Feedbacks](#991-registro-de-feedbacks)
   - [9.10 Relatório de Medicamentos](#910-relatório-de-medicamentos)
     - [9.10.1 Registro de Medicamentos](#9101-registro-de-medicamentos)
+  - [9.11 Relatório de Notificações](#911-relatório-de-notificações)
+    - [9.11.1 Registro de Notificações](#9111-registro-de-notificações)
+  - [9.12 Relatório de Prontuários](#912-relatório-de-prontuários)
+    - [9.12.1 Registro de Prontuários](#9121-registro-de-prontuários)
+  - [9.13 Relatório de Vacinas](#913-relatório-de-vacinas)
+    - [9.13.1 Registro de Vacinas](#9131-registro-de-vacinas)
+  - [9.14 Gráficos](#914-gráficos)
+    - [9.14.1 Gráfico Saldo dos Clientes](#9141-gráfico-saldo-dos-clientes)
+    - [9.14.2 Gráfico Tipos de Ração Consumidas](#9142-gráfico-tipos-de-ração-consumidas)
+  - [9.15 Dashboard - Acesso via Menu](#915-dashboard---acesso-via-menu)
+  - [9.16 Alterar Senha](#916-alterar-senha)
+  - [9.17 Usuários](#917-usuários)
+  - [9.18 Configurações](#918-configurações)
+  - [9.19 Autenticação](#919-autenticação)
+  - [9.20 Sair do Sistema (Retorna para a tela de Login)](#920-sair-do-sistema-retorna-para-a-tela-de-login)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
@@ -506,11 +521,11 @@ classDiagram
 
 ![Registro de AtendenAnimaiste](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_animais.png)
 
-## 9.6 Relatório de Lazer
+## 9.6 Relatório de Item Lazer
 
 ![Relatório de Lazer](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_lazer.png)
 
-### 9.6.1 Registro de Lazer
+### 9.6.1 Registro de Item Lazer
 
 ![Registro de Lazer](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_lazer.png)
 
@@ -545,6 +560,64 @@ classDiagram
 ### 9.10.1 Registro de Medicamentos
 
 ![Registro de Medicamentos](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_medicamento.png)
+
+## 9.11 Relatório de Notificações
+
+![Relatório de Notificações](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_notificacoes.png)
+
+### 9.11.1 Registro de Notificações
+
+![Registro de Notificações](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_notificacoes.png)
+
+## 9.12 Relatório de Prontuários
+
+![Relatório de Prontuários](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_prontuario.png)
+
+### 9.12.1 Registro de Prontuários
+
+![Registro de Prontuários](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_prontuario.png)
+
+## 9.13 Relatório de Vacinas
+
+![Relatório de Vacinas](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_vacina.png)
+
+### 9.13.1 Registro de Vacinas
+
+![Registro de Vacinas](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_vacina.png)
+
+## 9.14 Gráficos
+
+### 9.14.1 Gráfico Saldo dos Clientes
+
+![Gráfico Saldo dos Clientes](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/grafico_saldoClientes.png)
+
+### 9.14.2 Gráfico Tipos de Ração Consumidas
+
+![Gráfico Tipos de Ração Consumidas](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/grafico_tiposRacao.png)
+
+## 9.15 Dashboard - Acesso via Menu
+
+![Dashboard - Acesso via Menu](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/dashboard_inMenu.png)
+
+## 9.16 Alterar Senha
+
+![Alterar Senha](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/dashboard_inMenu.png)
+
+## 9.17 Usuários
+
+![Usuários](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/usuarios.png)
+
+## 9.18 Configurações
+
+![Configurações](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/configuracoes.png)
+
+## 9.19 Autenticação
+
+![Autenticação](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/autenticacao.png)
+
+## 9.20 Sair do Sistema (Retorna para a tela de Login)
+
+![Sair do Sistema](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/sair.png)
 
 # 10. Diagrama de navegação de telas
 
