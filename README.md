@@ -679,6 +679,47 @@ flowchart TD
 
 # 11. Pilha tecnológica
 
+```mermaid
+graph TD
+    %% Frontend
+    A[Frontend] --> A1[HTML/CSS]
+    A --> A2[JavaScript]
+    A --> A3[Framework Frontend React/Vue.js]
+    A --> A4[Aplicação Mobile Flutter/React Native]
+
+    %% Backend
+    B[Backend] --> B1[Node.js/Express]
+    B --> B2[.NET Core]
+    B --> B3[Java Spring Boot]
+
+    %% Banco de Dados
+    C[Banco de Dados] --> C1[MySQL]
+    C --> C2[PostgreSQL]
+    C --> C3[MongoDB]
+
+    %% Serviços Externos
+    D[Serviços Externos] --> D1[Serviço de Mensagens Twilio/SendGrid]
+    D --> D2[Gateway de Pagamento Stripe/PayPal]
+    D --> D3[Serviço de Notificações Firebase]
+
+    %% Infraestrutura
+    E[Infraestrutura] --> E1[Servidor Web Nginx/Apache]
+    E --> E2[Servidor de Aplicação Docker/Kubernetes]
+    E --> E3[Cloud Provider AWS/Azure/GCP]
+
+    %% Ferramentas de Suporte
+    F[Ferramentas de Suporte] --> F1[Controle de Versão Git/GitHub]
+    F --> F2[Monitoramento Prometheus/Grafana]
+    F --> F3[CI/CD Jenkins/GitHub Actions]
+
+    %% Conexões
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    E --> F
+```
+
 # 12. Requisitos de sistemas
 
 # 13. Considerações sobre segurança
