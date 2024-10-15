@@ -485,7 +485,11 @@ classDiagram
 
 # 7. Diagrama de componentes
 
+![Diagrama de Componentes](https://github.com/Healzy1/icaro_reis/blob/main/diagrama_componentes/diagrama_componentes.png)
+
 # 8. Diagrama de implantação
+
+![Diagrama de Implantação](https://github.com/Healzy1/icaro_reis/blob/main/diagrama_implantacao/Diagrama_implantacao.png)
 
 # 9. Protótipo de telas
 
