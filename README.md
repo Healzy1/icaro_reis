@@ -625,6 +625,58 @@ classDiagram
 
 # 10. Diagrama de navegação de telas
 
+```mermaid
+flowchart TD
+    A[Login] --> B[Menu Principal]
+    B --> C[Cadastro de Clientes e Animais]
+    B --> D[Agendamento de Consultas]
+    B --> E[Atendimento]
+    B --> F[Histórico de Atendimentos]
+    B --> G[Controle de Estoque]
+    B --> H[Vendas de Produtos]
+    B --> I[Relatórios Gerenciais]
+    B --> J[Configurações]
+    B --> K[Suporte ao Cliente]
+
+    %% Subnavegação de Cadastro de Clientes e Animais
+    C --> C1[Cadastro de Cliente]
+    C --> C2[Cadastro de Animal]
+    C --> C3[Consulta de Cadastro]
+
+    %% Subnavegação de Agendamento de Consultas
+    D --> D1[Marcar Nova Consulta]
+    D --> D2[Consulta de Agenda]
+    D --> D3[Reagendar Consulta]
+
+    %% Subnavegação de Atendimento
+    E --> E1[Fila de Espera]
+    E --> E2[Entrevista com o Dono]
+    E --> E3[Exame do Animal]
+    E --> E4[Emissão de Receita]
+    E --> E5[Atualização do Prontuário]
+
+    %% Subnavegação de Controle de Estoque
+    G --> G1[Verificar Estoque]
+    G --> G2[Adicionar Produtos]
+    G --> G3[Alerta de Níveis Baixos]
+
+    %% Subnavegação de Vendas de Produtos
+    H --> H1[Venda de Medicamentos]
+    H --> H2[Venda de Rações]
+    H --> H3[Venda de Itens de Lazer]
+
+    %% Subnavegação de Relatórios Gerenciais
+    I --> I1[Relatório de Atendimentos]
+    I --> I2[Relatório de Vendas]
+    I --> I3[Relatório de Estoque]
+
+    %% Subnavegação de Suporte ao Cliente
+    K --> K1[Chat Online]
+    K --> K2[Sistema de Tickets]
+    K --> K3[Feedback dos Clientes]
+
+```
+
 # 11. Pilha tecnológica
 
 # 12. Requisitos de sistemas
