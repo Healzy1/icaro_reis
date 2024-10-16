@@ -139,7 +139,7 @@ Descrição do cenário onde o sistema deverá funcionar.
 
 # 3. Visão Geral do Sistema
 
-O sistema proposto para a clínica veterinária oferece uma plataforma abrangente e intuitiva, projetada para atender às necessidades de diversos usuários, incluindo proprietários de animais, atendentes, veterinários e administradores.
+O sistema fornece uma interface de login para os funcionários da clínica, permitindo o acesso a funcionalidades de gerenciamento de animais, registros de atendimento, e controle de estoque. Os usuários podem cadastrar, consultar, editar e excluir informações sobre os animais atendidos, seus donos, e os serviços prestados. Além disso, o sistema gera relatórios detalhados e gráficos para análise de dados, facilitando a tomada de decisões na clínica. Os funcionários também podem acompanhar o status dos atendimentos e gerenciar o agendamento de consultas, garantindo um fluxo de trabalho organizado e eficiente.
 
 ### Funcionalidades Principais
 
@@ -160,7 +160,6 @@ O sistema proposto para a clínica veterinária oferece uma plataforma abrangent
 ### Experiência do Usuário
 
 Com uma interface amigável e funcionalidades projetadas para a eficiência, o sistema melhora a experiência do usuário ao simplificar processos administrativos e de atendimento. A capacidade de gerenciar informações de forma centralizada e acessível contribui para um atendimento mais organizado e eficaz, promovendo a saúde e o bem-estar dos animais atendidos.
-
 
 # 4. Diagrama ER
 
