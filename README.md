@@ -5,7 +5,9 @@ Pagina da disciplina Engenharia de Software
 - [Icaro\_Reis](#icaro_reis)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do Negócio](#2-descrição-do-negócio)
-- [3. Visão geral do sistema](#3-visão-geral-do-sistema)
+- [3. Visão Geral do Sistema](#3-visão-geral-do-sistema)
+    - [Funcionalidades Principais](#funcionalidades-principais)
+    - [Experiência do Usuário](#experiência-do-usuário)
 - [4. Diagrama ER](#4-diagrama-er)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
 - [6. Casos de uso](#6-casos-de-uso)
@@ -51,9 +53,18 @@ Pagina da disciplina Engenharia de Software
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
+  - [12.1. Requisitos do Lado Cliente](#121-requisitos-do-lado-cliente)
+  - [12.2. Requisitos do Lado Servidor](#122-requisitos-do-lado-servidor)
 - [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
-- [14. Manutenção e instalação](#14-manutenção-e-instalação)
-- [15. Glossário](#15-glossário)
+  - [13.1 Lado Cliente](#131-lado-cliente)
+  - [13.2 Lado Servidor](#132-lado-servidor)
+- [14. Manutenção, Instalação e Novas Funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
+  - [14.1 Instalação no Servidor](#141-instalação-no-servidor)
+  - [14.2 Manutenção](#142-manutenção)
+  - [14.3 Novas Funcionalidades](#143-novas-funcionalidades)
+- [15. Treinamento](#15-treinamento)
+  - [15.1 Usuário](#151-usuário)
+  - [15.2 Admin](#152-admin)
 - [16 Script SQL](#16-script-sql)
   - [16.1. Comando CREATE table:](#161-comando-create-table)
   - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
@@ -126,9 +137,30 @@ Descrição do cenário onde o sistema deverá funcionar.
 
 30. O sistema deve permitir o registro das vacinas que cada animal recebeu, com datas e tipos de vacina.
 
-# 3. Visão geral do sistema
+# 3. Visão Geral do Sistema
 
-Descrição do sistema e suas relações.
+O sistema proposto para a clínica veterinária oferece uma plataforma abrangente e intuitiva, projetada para atender às necessidades de diversos usuários, incluindo proprietários de animais, atendentes, veterinários e administradores.
+
+### Funcionalidades Principais
+
+- **Login Personalizado**: O sistema permite que diferentes tipos de usuários façam login, garantindo que cada um tenha acesso às funcionalidades relevantes de acordo com seu papel na clínica.
+
+- **Gerenciamento de Animais**: Usuários podem facilmente cadastrar, consultar, editar e excluir registros de animais. Isso inclui informações sobre saúde, hábitos e dietas, tornando a gestão de cada animal mais eficiente.
+
+- **Administração de Funcionários**: O sistema possibilita o gerenciamento de dados dos funcionários, facilitando a organização das equipes que atendem aos animais.
+
+- **Controle de Vacinas e Tratamentos**: Os usuários têm acesso a um histórico detalhado de vacinas e tratamentos recebidos pelos animais, garantindo que as informações estejam sempre atualizadas e acessíveis.
+
+- **Agendamento de Consultas**: Os proprietários podem agendar consultas de forma rápida, escolhendo horários convenientes e visualizando a disponibilidade dos veterinários.
+
+- **Relatórios e Dashboards**: O sistema gera relatórios gerenciais e gráficos que ajudam na análise dos atendimentos realizados, vendas de produtos e serviços, permitindo uma tomada de decisão mais informada.
+
+- **Acompanhamento do Status de Atendimento**: Os usuários podem acompanhar o status de seus atendimentos em tempo real, recebendo notificações e lembretes importantes.
+
+### Experiência do Usuário
+
+Com uma interface amigável e funcionalidades projetadas para a eficiência, o sistema melhora a experiência do usuário ao simplificar processos administrativos e de atendimento. A capacidade de gerenciar informações de forma centralizada e acessível contribui para um atendimento mais organizado e eficaz, promovendo a saúde e o bem-estar dos animais atendidos.
+
 
 # 4. Diagrama ER
 
@@ -722,11 +754,148 @@ graph TD
 
 # 12. Requisitos de sistemas
 
+## 12.1. Requisitos do Lado Cliente
+
+- **Hardware**: PC ou dispositivo móvel (celular ou tablet) com acesso à internet.
+- **Software**: Navegador atualizado que suporte HTML, CSS e JavaScript (por exemplo, Chrome, Firefox, Safari, Edge) para acesso ao sistema web, ou aplicativo instalado para dispositivos móveis, se disponível.
+- **Conectividade**: Conexão estável com a internet para acessar a aplicação e receber atualizações em tempo real.
+- **Requisitos Mínimos de Sistema**:
+  - Para PCs: Processador de pelo menos 2 GHz, 4 GB de RAM, e resolução de tela de 1366x768 ou superior.
+  - Para dispositivos móveis: Sistema operacional Android 8.0 ou superior, iOS 12.0 ou superior, com pelo menos 2 GB de RAM.
+- **Navegador**: Deve ser compatível com HTML5, CSS3, e ES6 (versão mais recente do JavaScript), garantindo o suporte a todas as funcionalidades do sistema.
+
+## 12.2. Requisitos do Lado Servidor
+
+- **Infraestrutura**:
+  - Uma máquina física ou virtual para hospedar o sistema, configurada para desenvolvimento e produção de aplicações web.
+- **Servidores**:
+  - Dois servidores distintos:
+    - **Servidor de Aplicação**: Responsável por executar a aplicação e gerenciar a lógica de negócios.
+    - **Servidor Web**: Responsável por servir páginas web e arquivos estáticos.
+- **Banco de Dados**:
+  - Sistema de gerenciamento de banco de dados relacional para armazenar informações sobre clientes, animais, histórico de atendimentos, produtos e serviços.
+- **Aplicação**:
+  - A aplicação deve ser implementada em um ambiente de backend que suporte a integração com o servidor de aplicação e o banco de dados.
+- **Conectividade**:
+  - Acesso à internet para comunicação com serviços externos (por exemplo, envio de e-mails, notificações SMS, ou integração com gateways de pagamento).
+- **Escalabilidade**:
+  - Capacidade de escalar horizontalmente o servidor de aplicação e o servidor web para suportar um número crescente de usuários.
+
 # 13. Considerações sobre segurança
 
-# 14. Manutenção e instalação
+## 13.1 Lado Cliente
 
-# 15. Glossário
+- **Regras de Senha**:
+  - Senhas devem ter um comprimento mínimo de 8 caracteres.
+  - Devem conter pelo menos um caractere especial, um número, uma letra maiúscula e uma letra minúscula.
+  - A aplicação deve forçar a troca de senha periódica para aumentar a segurança.
+
+- **Captcha**:
+  - Implementação de CAPTCHA nos formulários de login para evitar ataques automatizados de força bruta.
+
+- **Autenticação de Dois Fatores (2FA)**:
+  - Opção para os usuários habilitarem a autenticação de dois fatores para aumentar a segurança do acesso à conta.
+
+- **Recuperação de Senha**:
+  - Recuperação de senha disponível via e-mail cadastrado.
+  - Envio de um código de verificação para o e-mail do usuário para redefinir a senha.
+  - O código enviado por e-mail deve expirar após um período de tempo definido (por exemplo, 15 minutos) para evitar tentativas indevidas.
+
+## 13.2 Lado Servidor
+
+- **Sistema Operacional**:
+  - O servidor deve ser configurado com um sistema operacional Linux para maior segurança e estabilidade.
+
+- **Política de Backup de Aplicação e Banco de Dados**:
+  - **Full Backup**:
+    - Realizado uma vez por mês, armazenando uma cópia completa de todos os dados.
+    - Realizado a cada 15 dias para manter os dados atualizados em períodos intermediários.
+  - **Backup Incremental**:
+    - Realizado diariamente, armazenando apenas as alterações feitas desde o último backup.
+  - Os backups devem ser criptografados e armazenados em local seguro.
+
+- **Segurança de Acesso aos Dados**:
+  - O administrador do sistema não terá acesso direto aos dados pessoais dos usuários para proteger a privacidade e segurança das informações.
+  - O acesso a dados sensíveis deve ser restrito apenas aos usuários com permissões específicas.
+
+- **Medidas Adicionais de Segurança**:
+  - Implementação de firewall e regras de segurança de rede para proteger o servidor contra acessos não autorizados.
+  - Monitoramento constante de atividades suspeitas e alertas em caso de tentativas de invasão.
+  - Atualização regular dos softwares do servidor para corrigir vulnerabilidades de segurança.
+
+
+# 14. Manutenção, Instalação e Novas Funcionalidades
+
+## 14.1 Instalação no Servidor
+
+- **Procedimentos de Instalação**:
+  - O sistema deve ser instalado diretamente no servidor, com a configuração adequada do ambiente de produção (Linux) e dos serviços necessários, como servidor web e banco de dados.
+  - Realizar configuração de segurança do sistema, incluindo permissões de acesso e proteção dos diretórios críticos.
+  - Garantir que todos os componentes, como bibliotecas e dependências, estejam instalados e atualizados.
+
+- **Ambiente de Testes**:
+  - Deve existir um ambiente de testes separado do ambiente de produção para validar atualizações e novas funcionalidades antes de implementá-las no servidor principal.
+
+## 14.2 Manutenção
+
+- **Manutenção Preventiva**:
+  - Realizar verificações periódicas no sistema para garantir que está funcionando corretamente e identificar possíveis falhas.
+  - Manter o servidor atualizado com os últimos patches de segurança e atualizações de software.
+
+- **Manutenção Corretiva**:
+  - Corrigir falhas e bugs identificados no sistema de forma rápida para minimizar o impacto nos usuários.
+  - Manter logs de erros e registros de atividades para facilitar o diagnóstico de problemas.
+
+- **Suporte Técnico**:
+  - Disponibilizar uma equipe de suporte para lidar com problemas técnicos e auxiliar os usuários.
+  - Utilizar um sistema de tickets para gerenciar solicitações de suporte e acompanhar a resolução.
+
+## 14.3 Novas Funcionalidades
+
+- **Formalização do Pedido**:
+  - Todos os pedidos de novas funcionalidades devem ser formalizados por escrito, especificando os requisitos e expectativas.
+  - O pedido deve ser avaliado quanto à viabilidade e necessidade antes de ser aprovado para implementação.
+
+- **Restrições quanto à Interface**:
+  - Os clientes não devem interferir diretamente na estética e design das telas do sistema. A equipe técnica é responsável pela definição das melhores práticas de usabilidade e layout.
+
+- **Critérios para Decisão**:
+  - A implementação de novas funcionalidades será decidida com base em três critérios principais:
+    - **a) Disponibilidade da Equipe**:
+      - Verificar se a equipe de desenvolvimento possui tempo e recursos para implementar a funcionalidade solicitada. Se sim, prosseguir com a implementação.
+    - **b) Viabilidade Econômica**:
+      - Avaliar se a implementação é economicamente viável. Caso os custos estejam dentro do orçamento, a funcionalidade será implementada.
+    - **c) Viabilidade Tecnológica**:
+      - Analisar se a funcionalidade é tecnicamente viável e compatível com o sistema atual. Se for possível, a implementação será realizada.
+  - Somente após a aprovação em todos os três critérios, a nova funcionalidade será inserida no cronograma de desenvolvimento.
+
+
+# 15. Treinamento
+
+## 15.1 Usuário
+
+- **Materiais de Treinamento**:
+  - Disponibilizar vídeos explicativos na web, com tutoriais detalhados sobre o uso do sistema e suas funcionalidades principais.
+  - Fornecer um manual de usuário com instruções passo a passo para facilitar o aprendizado e a utilização do sistema.
+
+- **Acompanhamento Inicial**:
+  - Disponibilizar suporte inicial para os novos usuários durante o período de adaptação ao sistema.
+  - Criar uma seção de perguntas frequentes (FAQ) para ajudar na resolução de dúvidas comuns.
+
+## 15.2 Admin
+
+- **Materiais de Treinamento**:
+  - Disponibilizar vídeos específicos para os administradores, com tutoriais sobre as funcionalidades avançadas e o gerenciamento do sistema.
+  - Criar um guia de administração, incluindo procedimentos de manutenção, backup e segurança.
+
+- **Treinamento Especializado**:
+  - Fornecer um treinamento especializado para os administradores, abordando a configuração do sistema, gestão de usuários e práticas de segurança.
+  - Incluir sessões práticas para que os administradores possam se familiarizar com o ambiente de produção e de testes.
+
+- **Suporte Pós-Treinamento**:
+  - Manter uma linha de suporte direto para administradores, oferecendo auxílio em questões mais técnicas e específicas.
+  - Realizar revisões periódicas de conhecimentos para garantir que os administradores estejam atualizados com as últimas mudanças no sistema.
+
 
 # 16 Script SQL
 
