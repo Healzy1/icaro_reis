@@ -10,6 +10,8 @@ Pagina da disciplina Engenharia de Software
   - [4.1 Descrição das Entidades e Relacionamentos](#41-descrição-das-entidades-e-relacionamentos)
   - [4.2 Relacionamentos](#42-relacionamentos)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
+  - [5.1 Descrição das Classes e Relacionamentos](#51-descrição-das-classes-e-relacionamentos)
+  - [5.2 Relacionamentos](#52-relacionamentos)
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1 Casos de Uso](#61-casos-de-uso)
   - [6.2. Histórias de usuário](#62-histórias-de-usuário)
@@ -430,6 +432,53 @@ classDiagram
 
 
 ```
+
+## 5.1 Descrição das Classes e Relacionamentos
+
+- **Cliente**: Contém informações sobre os clientes da clínica, como nome, endereço, telefone e email. Um cliente pode ter vários animais e agendar várias consultas.
+  
+- **Animal**: Contém informações sobre os animais, incluindo nome, espécie, raça, hábitos, tipo de ração e condição de chegada. Um animal pode receber vários atendimentos e pode ter um prontuário.
+
+- **Veterinario**: Contém informações sobre os veterinários, incluindo nome e especialidade. Um veterinário pode realizar várias consultas.
+
+- **Atendente**: Contém informações sobre os atendentes da clínica, como nome. Um atendente pode gerenciar várias consultas.
+
+- **Consulta**: Registra as consultas realizadas, incluindo data, status e receita. Cada consulta está associada a um animal, um veterinário e pode prescrever vários medicamentos. Uma consulta gera um prontuário.
+
+- **Prontuario**: Contém observações e diagnósticos feitos pelo veterinário durante a consulta. Cada animal pode ter um prontuário.
+
+- **Medicamento**: Contém informações sobre os medicamentos disponíveis na clínica, como nome e quantidade em estoque. Um medicamento pode ser usado em vários prontuários.
+
+- **Racao**: Contém informações sobre as rações disponíveis, como nome e quantidade em estoque. Uma ração pode ser usada em vários prontuários.
+
+- **ItemLazer**: Contém informações sobre itens de lazer disponíveis, incluindo nome e quantidade em estoque. Um item de lazer pode ser vendido para vários animais.
+
+- **Vacina**: Contém informações sobre vacinas administradas aos animais, como nome e data de aplicação. Um animal pode receber várias vacinas.
+
+- **Relatorio**: Contém informações sobre relatórios gerados a partir das consultas. Cada relatório pode ser gerado para várias consultas.
+
+- **Notificacao**: Contém informações sobre notificações enviadas aos clientes, como tipo e mensagem. Um cliente pode receber várias notificações.
+
+- **Suporte**: Contém informações sobre os pedidos de suporte dos clientes, como tipo e status. Um cliente pode utilizar vários suportes.
+
+## 5.2 Relacionamentos
+
+- **Cliente** pode ter vários **Animais**.
+- **Cliente** pode agendar várias **Consultas**.
+- **Veterinario** pode realizar várias **Consultas**.
+- **Consulta** refere-se a um **Animal**.
+- **Consulta** gera um **Prontuario**.
+- **Consulta** pode prescrever vários **Medicamentos**.
+- **Animal** pode ser atendido por vários **Veterinarios**.
+- **Atendente** pode gerenciar várias **Consultas**.
+- **Animal** pode receber várias **Vacinas**.
+- **Medicamento** pode ser usado em vários **Prontuarios**.
+- **Racao** pode ser usada em vários **Prontuarios**.
+- **ItemLazer** pode ser vendido para vários **Animais**.
+- **Cliente** pode dar vários **Feedbacks**.
+- **Cliente** pode receber várias **Notificacoes**.
+- **Cliente** pode utilizar vários **Suportes**.
+- **Relatorio** pode ser gerado para várias **Consultas**.
 
 # 6. Casos de uso
 
