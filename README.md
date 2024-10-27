@@ -6,9 +6,9 @@ Pagina da disciplina Engenharia de Software
 - [1. Introdução](#1-introdução)
 - [2. Descrição do Negócio](#2-descrição-do-negócio)
 - [3. Visão Geral do Sistema](#3-visão-geral-do-sistema)
-    - [Funcionalidades Principais](#funcionalidades-principais)
-    - [Experiência do Usuário](#experiência-do-usuário)
 - [4. Diagrama ER](#4-diagrama-er)
+  - [4.1 Descrição das Entidades e Relacionamentos](#41-descrição-das-entidades-e-relacionamentos)
+  - [4.2 Relacionamentos](#42-relacionamentos)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1 Casos de Uso](#61-casos-de-uso)
@@ -139,27 +139,14 @@ Descrição do cenário onde o sistema deverá funcionar.
 
 # 3. Visão Geral do Sistema
 
-O sistema fornece uma interface de login para os funcionários da clínica, permitindo o acesso a funcionalidades de gerenciamento de animais, registros de atendimento, e controle de estoque. Os usuários podem cadastrar, consultar, editar e excluir informações sobre os animais atendidos, seus donos, e os serviços prestados. Além disso, o sistema gera relatórios detalhados e gráficos para análise de dados, facilitando a tomada de decisões na clínica. Os funcionários também podem acompanhar o status dos atendimentos e gerenciar o agendamento de consultas, garantindo um fluxo de trabalho organizado e eficiente.
+O sistema foi desenvolvido para otimizar a gestão de uma clínica veterinária que atende gatos e cachorros, oferecendo uma interface de login para os funcionários. Ele permite o gerenciamento completo dos registros de atendimento, cadastro de animais e clientes, e controle de estoque de produtos. As principais funcionalidades incluem:
 
-### Funcionalidades Principais
+- Cadastro, consulta, edição e exclusão de informações sobre os animais, seus donos e os serviços prestados.
+- Controle de estoque de medicamentos e produtos, com alertas para reposição.
+- Agendamento e acompanhamento de consultas, com notificações automáticas para os clientes.
+- Geração de relatórios e gráficos detalhados para análise de dados e suporte à tomada de decisões.
 
-- **Login Personalizado**: O sistema permite que diferentes tipos de usuários façam login, garantindo que cada um tenha acesso às funcionalidades relevantes de acordo com seu papel na clínica.
-
-- **Gerenciamento de Animais**: Usuários podem facilmente cadastrar, consultar, editar e excluir registros de animais. Isso inclui informações sobre saúde, hábitos e dietas, tornando a gestão de cada animal mais eficiente.
-
-- **Administração de Funcionários**: O sistema possibilita o gerenciamento de dados dos funcionários, facilitando a organização das equipes que atendem aos animais.
-
-- **Controle de Vacinas e Tratamentos**: Os usuários têm acesso a um histórico detalhado de vacinas e tratamentos recebidos pelos animais, garantindo que as informações estejam sempre atualizadas e acessíveis.
-
-- **Agendamento de Consultas**: Os proprietários podem agendar consultas de forma rápida, escolhendo horários convenientes e visualizando a disponibilidade dos veterinários.
-
-- **Relatórios e Dashboards**: O sistema gera relatórios gerenciais e gráficos que ajudam na análise dos atendimentos realizados, vendas de produtos e serviços, permitindo uma tomada de decisão mais informada.
-
-- **Acompanhamento do Status de Atendimento**: Os usuários podem acompanhar o status de seus atendimentos em tempo real, recebendo notificações e lembretes importantes.
-
-### Experiência do Usuário
-
-Com uma interface amigável e funcionalidades projetadas para a eficiência, o sistema melhora a experiência do usuário ao simplificar processos administrativos e de atendimento. A capacidade de gerenciar informações de forma centralizada e acessível contribui para um atendimento mais organizado e eficaz, promovendo a saúde e o bem-estar dos animais atendidos.
+O sistema foi projetado para garantir um fluxo de trabalho organizado e eficiente, proporcionando uma gestão centralizada e prática para os funcionários da clínica.
 
 # 4. Diagrama ER
 
@@ -282,6 +269,34 @@ erDiagram
     SISTEMA ||--o{ SUPORTE : oferece
 
 ```
+
+## 4.1 Descrição das Entidades e Relacionamentos
+
+- **CLIENTE**: Contém informações sobre os clientes da clínica.
+- **ANIMAL**: Contém informações sobre os animais que pertencem aos clientes, incluindo hábitos, tipo de ração e condição de chegada.
+- **VETERINARIO**: Contém informações sobre os veterinários, incluindo suas especialidades.
+- **ATENDENTE**: Contém informações sobre os atendentes que realizam o atendimento aos clientes.
+- **CONSULTA**: Registra as consultas realizadas para os animais, incluindo data, status e receita.
+- **PRONTUARIO**: Contém observações e diagnósticos feitos pelo veterinário durante a consulta.
+- **MEDICAMENTO**: Contém informações sobre os medicamentos disponíveis na clínica, incluindo nome e quantidade em estoque.
+- **RACAO**: Contém informações sobre as rações disponíveis, incluindo nome e quantidade em estoque.
+- **VACINA**: Contém informações sobre as vacinas administradas aos animais, incluindo nome e data de aplicação.
+- **FEEDBACK**: Registra os comentários e sugestões dos clientes sobre os serviços prestados.
+- **NOTIFICACAO**: Contém informações sobre notificações enviadas aos clientes, como lembretes de consultas.
+- **SUPORTE**: Registra informações sobre os pedidos de suporte dos clientes.
+
+## 4.2 Relacionamentos
+
+- **CLIENTE** pode ter vários **ANIMALs**.
+- **ANIMAL** pode participar de várias **CONSULTAs**.
+- **VETERINARIO** pode realizar várias **CONSULTAs**.
+- **ATENDENTE** pode intermediar várias **CONSULTAs**.
+- **CONSULTA** pode gerar um **PRONTUARIO**.
+- **ANIMAL** pode receber várias **VACINAs**.
+- **CLIENTE** pode fornecer vários **FEEDBACKs**.
+- **CLIENTE** pode receber várias **NOTIFICACAO**s.
+- **CLIENTE** pode solicitar vários **SUPORTE**s.
+
 
 # 5. Diagrama de classe
 
