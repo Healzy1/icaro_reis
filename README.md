@@ -14,8 +14,33 @@ Pagina da disciplina Engenharia de Software
   - [5.2 Relacionamentos](#52-relacionamentos)
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1 Casos de Uso](#61-casos-de-uso)
-  - [6.2. Histórias de usuário](#62-histórias-de-usuário)
-    - [Histórias de Usuário](#histórias-de-usuário)
+  - [6.2 Histórias de Usuário](#62-histórias-de-usuário)
+    - [6.2.1 Cadastro de Clientes e Animais](#621-cadastro-de-clientes-e-animais)
+    - [6.2.2 Informar Condições do Animal](#622-informar-condições-do-animal)
+    - [6.2.3 Informar Tipo de Ração](#623-informar-tipo-de-ração)
+    - [6.2.4 Informar Hábitos do Animal](#624-informar-hábitos-do-animal)
+    - [6.2.5 Atendimento por Vários Veterinários](#625-atendimento-por-vários-veterinários)
+    - [6.2.6 Agendamento por Agenda do Dia](#626-agendamento-por-agenda-do-dia)
+    - [6.2.7 Ficha e Prontuário do Animal](#627-ficha-e-prontuário-do-animal)
+    - [6.2.8 Marcar Horários Futuros](#628-marcar-horários-futuros)
+    - [6.2.9 Receita para o Animal](#629-receita-para-o-animal)
+    - [6.2.10 Atendimento por Atendente](#6210-atendimento-por-atendente)
+    - [6.2.11 Verificar Disponibilidade na Agenda](#6211-verificar-disponibilidade-na-agenda)
+    - [6.2.12 Fila de Espera](#6212-fila-de-espera)
+    - [6.2.13 Levar Cliente ao Veterinário](#6213-levar-cliente-ao-veterinário)
+    - [6.2.14 Entrevista com o Cliente](#6214-entrevista-com-o-cliente)
+    - [6.2.15 Formulário de Entrevista](#6215-formulário-de-entrevista)
+    - [6.2.16 Exame e Prontuário](#6216-exame-e-prontuário)
+    - [6.2.17 Receita do Animal](#6217-receita-do-animal)
+    - [6.2.18 Venda de Medicamentos Genéricos](#6218-venda-de-medicamentos-genéricos)
+    - [6.2.19 Venda de Rações de Tratamento](#6219-venda-de-rações-de-tratamento)
+    - [6.2.20 Aviso ao Cliente sobre o Procedimento](#6220-aviso-ao-cliente-sobre-o-procedimento)
+    - [6.2.21 Venda de Itens de Lazer](#6221-venda-de-itens-de-lazer)
+    - [6.2.22 Agendamento de Consultas e Acompanhamento Online](#6222-agendamento-de-consultas-e-acompanhamento-online)
+    - [6.2.23 Lembretes de Consultas via SMS/Email](#6223-lembretes-de-consultas-via-smsemail)
+    - [6.2.24 Histórico Detalhado de Atendimentos](#6224-histórico-detalhado-de-atendimentos)
+    - [6.2.25 Relatórios Gerenciais](#6225-relatórios-gerenciais)
+    - [6.2.26 Controle de Estoque](#6226-controle-de-estoque)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
@@ -486,97 +511,220 @@ classDiagram
 
 ![Casos de Uso](https://github.com/Healzy1/icaro_reis/blob/main/casos_de_uso/casos_de_uso.png)
 
-## 6.2. Histórias de usuário
+## 6.2 Histórias de Usuário
 
-### Histórias de Usuário
+### 6.2.1 Cadastro de Clientes e Animais
+**Como** um novo cliente,  
+**Quero** cadastrar meus dados pessoais e os dados dos meus animais (gato ou cachorro),  
+**Para que** eu possa agendar atendimentos e acessar os serviços da clínica.
 
-1. **Cadastro de Clientes e Animais**
-   - Como cliente, eu quero cadastrar meus dados pessoais e os dados dos meus animais (gato ou cachorro) para que eu possa agendar atendimentos e acessar os serviços da clínica.
+**Critérios de Aceitação:**
+- O cliente pode inserir seu nome, endereço, telefone e dados dos animais.
+- O sistema deve armazenar essas informações e associá-las ao cliente.
 
-2. **Informar Condições do Animal**
-   - Como cliente, eu quero informar as condições de saúde nas quais meu animal chega à clínica para que o veterinário tenha informações precisas sobre o estado atual do animal.
+### 6.2.2 Informar Condições do Animal
+**Como** um cliente,  
+**Quero** informar as condições de saúde nas quais meu animal chega à clínica,  
+**Para que** o veterinário tenha informações precisas sobre o estado atual do animal.
 
-3. **Informar Tipo de Ração**
-   - Como cliente, eu quero informar o tipo de ração que meu animal come para que a clínica possa ajustar os cuidados de acordo com a alimentação dele.
+**Critérios de Aceitação:**
+- O cliente pode descrever as condições de saúde do animal.
+- Essas informações são registradas no sistema.
 
-4. **Informar Hábitos do Animal**
-   - Como cliente, eu quero informar os hábitos do meu animal para que o veterinário tenha uma visão completa do comportamento e das rotinas dele.
+### 6.2.3 Informar Tipo de Ração
+**Como** um cliente,  
+**Quero** informar o tipo de ração que meu animal come,  
+**Para que** a clínica possa ajustar os cuidados de acordo com a alimentação dele.
 
-5. **Atendimento por Vários Veterinários**
-   - Como veterinário, eu quero que cada animal possa ser atendido por mais de um veterinário, garantindo a continuidade e qualidade dos cuidados.
+**Critérios de Aceitação:**
+- O cliente pode selecionar o tipo de ração.
+- O sistema deve registrar essa informação.
 
-6. **Agendamento por Agenda do Dia**
-   - Como cliente, eu quero que meu animal seja atendido de acordo com a agenda disponível do dia, garantindo uma consulta eficiente.
+### 6.2.4 Informar Hábitos do Animal
+**Como** um cliente,  
+**Quero** informar os hábitos do meu animal,  
+**Para que** o veterinário tenha uma visão completa do comportamento e das rotinas dele.
 
-7. **Ficha e Prontuário do Animal**
-   - Como sistema, eu devo gerar uma ficha e um prontuário para cada animal atendido, permitindo que o veterinário registre todas as observações e diagnósticos.
+**Critérios de Aceitação:**
+- O cliente pode descrever os hábitos do animal.
+- Essas informações são registradas no sistema.
 
-8. **Marcar Horários Futuros**
-   - Como cliente, eu quero marcar horários de atendimento futuro para garantir que o meu animal tenha uma consulta agendada previamente.
+### 6.2.5 Atendimento por Vários Veterinários
+**Como** um veterinário,  
+**Quero** que cada animal possa ser atendido por mais de um veterinário,  
+**Para que** a continuidade e qualidade dos cuidados sejam garantidas.
 
-9. **Receita para o Animal**
-   - Como veterinário, eu quero emitir uma receita para o animal, caso necessário, para que o dono possa adquirir medicamentos adequados.
+**Critérios de Aceitação:**
+- O sistema permite que múltiplos veterinários atendam o mesmo animal ao longo do tempo.
 
-10. **Atendimento por Atendente**
-    - Como cliente, eu quero ser atendido por um atendente assim que chego à clínica para ser direcionado ao próximo passo do atendimento.
+### 6.2.6 Agendamento por Agenda do Dia
+**Como** um cliente,  
+**Quero** que meu animal seja atendido de acordo com a agenda disponível do dia,  
+**Para que** haja uma consulta eficiente.
 
-11. **Verificar Disponibilidade na Agenda**
-    - Como atendente, eu quero verificar a disponibilidade de veterinários na agenda para agendar ou direcionar consultas de forma eficiente.
+**Critérios de Aceitação:**
+- O sistema mostra a agenda disponível dos veterinários.
+- O cliente pode agendar a consulta com base na disponibilidade.
 
-12. **Fila de Espera**
-    - Como atendente, eu quero colocar o cliente e seu animal na fila de espera caso não haja veterinário disponível no momento, garantindo o atendimento em ordem.
+### 6.2.7 Ficha e Prontuário do Animal
+**Como** um sistema,  
+**Quero** gerar uma ficha e um prontuário para cada animal atendido,  
+**Para que** o veterinário registre todas as observações e diagnósticos.
 
-13. **Levar Cliente ao Veterinário**
-    - Como atendente, eu quero levar o cliente e seu animal até o veterinário, facilitando o processo de atendimento.
+**Critérios de Aceitação:**
+- O sistema cria automaticamente uma ficha e um prontuário ao registrar um atendimento.
 
-14. **Entrevista com o Cliente**
-    - Como veterinário, eu quero realizar uma entrevista com o dono do animal para obter informações detalhadas sobre o estado e comportamento do animal.
+### 6.2.8 Marcar Horários Futuros
+**Como** um cliente,  
+**Quero** marcar horários de atendimento futuros,  
+**Para que** meu animal tenha uma consulta agendada previamente.
 
-15. **Formulário de Entrevista**
-    - Como sistema, eu quero registrar as informações da entrevista em um formulário, facilitando o armazenamento e análise dos dados pelo veterinário.
+**Critérios de Aceitação:**
+- O cliente pode selecionar uma data e hora para consultas futuras.
+- O sistema confirma o agendamento.
 
-16. **Exame e Prontuário**
-    - Como veterinário, eu quero examinar o animal e anotar minhas observações no prontuário, garantindo que todas as informações estejam documentadas.
+### 6.2.9 Receita para o Animal
+**Como** um veterinário,  
+**Quero** emitir uma receita para o animal,  
+**Para que** o dono possa adquirir medicamentos adequados.
 
-17. **Receita do Animal**
-    - Como veterinário, eu quero prescrever uma receita para o animal, quando necessário, para indicar o tratamento adequado.
+**Critérios de Aceitação:**
+- O veterinário pode gerar uma receita no sistema.
+- O cliente recebe uma cópia da receita.
 
-18. **Venda de Medicamentos Genéricos**
-    - Como cliente, eu quero poder comprar medicamentos genéricos na clínica para facilitar o tratamento do meu animal.
+### 6.2.10 Atendimento por Atendente
+**Como** um cliente,  
+**Quero** ser atendido por um atendente assim que chego à clínica,  
+**Para que** eu seja direcionado ao próximo passo do atendimento.
 
-19. **Venda de Rações de Tratamento**
-    - Como cliente, eu quero poder comprar rações de tratamento na clínica para atender às necessidades alimentares especiais do meu animal.
+**Critérios de Aceitação:**
+- O atendente deve estar disponível para receber o cliente imediatamente.
 
-20. **Aviso ao Cliente sobre o Procedimento**
-    - Como cliente, eu quero ser avisado a cada passo do procedimento que meu animal esteja fazendo, para acompanhar o progresso e entender o que está acontecendo.
+### 6.2.11 Verificar Disponibilidade na Agenda
+**Como** um atendente,  
+**Quero** verificar a disponibilidade de veterinários na agenda,  
+**Para que** eu possa agendar ou direcionar consultas de forma eficiente.
 
-21. **Venda de Itens de Lazer**
-    - Como cliente, eu quero poder comprar itens de lazer para o meu animal na clínica, como brinquedos e acessórios.
+**Critérios de Aceitação:**
+- O sistema deve exibir a agenda dos veterinários em tempo real.
 
-22. **Agendamento de Consultas e Acompanhamento Online**
-    - Como cliente, eu quero poder agendar consultas e acompanhar o status do atendimento online para maior conveniência e controle.
+### 6.2.12 Fila de Espera
+**Como** um atendente,  
+**Quero** colocar o cliente e seu animal na fila de espera,  
+**Para que** o atendimento seja garantido em ordem.
 
-23. **Lembretes de Consultas via SMS/Email**
-    - Como cliente, eu quero receber lembretes de consultas e atualizações sobre o status do atendimento via SMS ou email para não perder compromissos importantes.
+**Critérios de Aceitação:**
+- O sistema deve registrar a posição do cliente na fila de espera.
 
-24. **Histórico Detalhado de Atendimentos**
-    - Como sistema, eu quero manter um histórico detalhado de todos os atendimentos realizados para cada animal, incluindo diagnósticos, tratamentos e medicamentos prescritos, para referência futura.
+### 6.2.13 Levar Cliente ao Veterinário
+**Como** um atendente,  
+**Quero** levar o cliente e seu animal até o veterinário,  
+**Para que** o processo de atendimento seja facilitado.
 
-25. **Relatórios Gerenciais**
-    - Como administrador da clínica, eu quero gerar relatórios gerenciais de atendimentos, vendas e controle de estoque para tomar decisões estratégicas com base em dados precisos.
+**Critérios de Aceitação:**
+- O atendente deve acompanhar o cliente até a sala de atendimento.
 
-26. **Controle de Estoque**
-    - Como sistema, eu quero controlar o estoque de medicamentos, rações e outros produtos vendidos na clínica, alertando quando os níveis estiverem baixos, para evitar falta de produtos.
+### 6.2.14 Entrevista com o Cliente
+**Como** um veterinário,  
+**Quero** realizar uma entrevista com o dono do animal,  
+**Para que** eu possa obter informações detalhadas sobre o estado e comportamento do animal.
 
-27. **Feedback dos Clientes**
-    - Como cliente, eu quero deixar feedback sobre os serviços prestados, ajudando a clínica a melhorar a qualidade do atendimento.
+**Critérios de Aceitação:**
+- O veterinário pode fazer perguntas e registrar as respostas no sistema.
 
-28. **Suporte ao Cliente**
-    - Como cliente, eu quero acessar um canal de suporte, como chat online ou sistema de tickets, para resolver dúvidas e problemas de forma eficiente.
+### 6.2.15 Formulário de Entrevista
+**Como** um sistema,  
+**Quero** registrar as informações da entrevista em um formulário,  
+**Para que** o armazenamento e análise dos dados pelo veterinário sejam facilitados.
 
-29. **Registro de Vacinas**
-    - Como sistema, eu quero registrar as vacinas que cada animal recebeu, com datas e tipos de vacina, para manter o histórico de vacinação atualizado.
+**Critérios de Aceitação:**
+- O sistema deve permitir a inserção e armazenamento das informações da entrevista.
 
+### 6.2.16 Exame e Prontuário
+**Como** um veterinário,  
+**Quero** examinar o animal e anotar minhas observações no prontuário,  
+**Para que** todas as informações estejam documentadas.
+
+**Critérios de Aceitação:**
+- O veterinário pode adicionar notas e diagnósticos no prontuário do animal.
+
+### 6.2.17 Receita do Animal
+**Como** um veterinário,  
+**Quero** prescrever uma receita para o animal,  
+**Quando** necessário,  
+**Para que** o tratamento adequado seja indicado.
+
+**Critérios de Aceitação:**
+- O sistema deve permitir a geração de receitas personalizadas para cada animal.
+
+### 6.2.18 Venda de Medicamentos Genéricos
+**Como** um cliente,  
+**Quero** poder comprar medicamentos genéricos na clínica,  
+**Para que** eu facilite o tratamento do meu animal.
+
+**Critérios de Aceitação:**
+- O cliente pode visualizar e adquirir medicamentos disponíveis na clínica.
+
+### 6.2.19 Venda de Rações de Tratamento
+**Como** um cliente,  
+**Quero** poder comprar rações de tratamento na clínica,  
+**Para que** atenda às necessidades alimentares especiais do meu animal.
+
+**Critérios de Aceitação:**
+- O sistema deve listar as rações de tratamento disponíveis.
+
+### 6.2.20 Aviso ao Cliente sobre o Procedimento
+**Como** um cliente,  
+**Quero** ser avisado a cada passo do procedimento que meu animal esteja fazendo,  
+**Para que** eu possa acompanhar o progresso e entender o que está acontecendo.
+
+**Critérios de Aceitação:**
+- O sistema deve enviar atualizações sobre o estado do animal durante o atendimento.
+
+### 6.2.21 Venda de Itens de Lazer
+**Como** um cliente,  
+**Quero** poder comprar itens de lazer para o meu animal na clínica,  
+**Para que** eu possa enriquecer a experiência do meu animal.
+
+**Critérios de Aceitação:**
+- O sistema deve exibir uma lista de itens de lazer disponíveis para venda.
+
+### 6.2.22 Agendamento de Consultas e Acompanhamento Online
+**Como** um cliente,  
+**Quero** poder agendar consultas e acompanhar o status do atendimento online,  
+**Para que** tenha maior conveniência e controle.
+
+**Critérios de Aceitação:**
+- O cliente pode acessar um portal online para agendar e acompanhar consultas.
+
+### 6.2.23 Lembretes de Consultas via SMS/Email
+**Como** um cliente,  
+**Quero** receber lembretes de consultas e atualizações sobre o status do atendimento via SMS ou email,  
+**Para que** eu não perca compromissos importantes.
+
+**Critérios de Aceitação:**
+- O sistema deve enviar lembretes automáticos conforme a data da consulta se aproxima.
+
+### 6.2.24 Histórico Detalhado de Atendimentos
+**Como** um sistema,  
+**Quero** manter um histórico detalhado de todos os atendimentos realizados para cada animal,  
+**Para que** eu possa fornecer referência futura.
+
+**Critérios de Aceitação:**
+- O sistema deve armazenar informações de atendimentos passados, incluindo diagnósticos e tratamentos.
+
+### 6.2.25 Relatórios Gerenciais
+**Como** um administrador da clínica,  
+**Quero** gerar relatórios gerenciais de atendimentos, vendas e controle de estoque,  
+**Para que** eu possa tomar decisões estratégicas com base em dados precisos.
+
+**Critérios de Aceitação:**
+- O sistema deve permitir a geração de relatórios customizados.
+
+### 6.2.26 Controle de Estoque
+**Como** um sistema,  
+**Quero** controlar o estoque de medicamentos, rações e outros produtos vendidos na clínica,  
+**Para que** eu possa alertar quando os níveis estiverem
 
 # 7. Diagrama de componentes
 
