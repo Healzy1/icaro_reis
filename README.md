@@ -930,26 +930,27 @@ flowchart TD
 flowchart TB
     %% Server Side
     subgraph "Server Side"
-        direction TB
-        A[BD - Banco de Dados] --> B[Servidor de Banco]
-        B --> C[Servidor Web]
-        C --> D[Componentes da App]
+        direction BT
+        D[Componentes da App] <--> C[Servidor Web]
+        C <--> B[Servidor de Banco]
+        B <--> A[BD - Banco de Dados]
     end
 
     %% Web
-    C --> E{Web}
+    C <--> E{Web}
 
     %% Client Side
     subgraph "Client Side"
-        direction TB
-        F[PC/Celular] --> G[SO]
-        G --> H[Browser Cliente Web]
-        H --> I[Javascript, C#, ASPX]
-        I --> J[Funcionalidades de Áudio e Vídeo]
+        direction BT
+        K[Funcionalidades de Áudio<br>e Vídeo] <--> J[JavaScript, PHP, etc.]
+        J <--> I[AppX]
+        I <--> H[Browser Cliente Web]
+        H <--> G[SO]
+        G <--> F[PC/Celular]
     end
 
     %% Conexão entre Server Side e Client Side via Web
-    E --> H
+    E <--> H
 ```
 
 # 12. Requisitos de sistemas
