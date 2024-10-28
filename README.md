@@ -958,12 +958,30 @@ flowchart TB
 ## 12.1. Requisitos do Lado Cliente
 
 - **Hardware**: PC ou dispositivo móvel (celular ou tablet) com acesso à internet.
+
 - **Software**: Navegador atualizado que suporte HTML, CSS e JavaScript (por exemplo, Chrome, Firefox, Safari, Edge) para acesso ao sistema web, ou aplicativo instalado para dispositivos móveis, se disponível.
+
+- **Sistema Operacional**:
+  - Para PCs: Windows 10 ou superior, macOS 10.14 ou superior, ou uma distribuição Linux atualizada.
+  - Para dispositivos móveis: Sistema operacional Android 8.0 ou superior, iOS 12.0 ou superior.
+
 - **Conectividade**: Conexão estável com a internet para acessar a aplicação e receber atualizações em tempo real.
+
+- **Requisitos de Largura de Banda**:
+  - Conexão com largura de banda mínima recomendada de pelo menos 1 Mbps para uma experiência satisfatória.
+
 - **Requisitos Mínimos de Sistema**:
   - Para PCs: Processador de pelo menos 2 GHz, 4 GB de RAM, e resolução de tela de 1366x768 ou superior.
   - Para dispositivos móveis: Sistema operacional Android 8.0 ou superior, iOS 12.0 ou superior, com pelo menos 2 GB de RAM.
-- **Navegador**: Deve ser compatível com HTML5, CSS3, e ES6 (versão mais recente do JavaScript), garantindo o suporte a todas as funcionalidades do sistema.
+
+- **Permissões e Configurações de Segurança**:
+  - Permitir cookies e JavaScript no navegador para o correto funcionamento da aplicação.
+
+- **Forma de Autenticação**:
+  - O sistema deve permitir a autenticação através de login com usuário e senha.
+  - Considerar a implementação de autenticação de dois fatores (2FA) para aumentar a segurança.
+  - As credenciais de acesso devem ser protegidas e armazenadas de forma segura, conforme melhores práticas de segurança.
+
 
 ## 12.2. Requisitos do Lado Servidor
 
