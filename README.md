@@ -80,8 +80,8 @@ Pagina da disciplina Engenharia de Software
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
-  - [12.1. Requisitos do Lado Cliente](#121-requisitos-do-lado-cliente)
-  - [12.2. Requisitos do Lado Servidor](#122-requisitos-do-lado-servidor)
+  - [12.1 Requisitos do Lado Cliente](#121-requisitos-do-lado-cliente)
+  - [12.2 Requisitos do Lado Servidor](#122-requisitos-do-lado-servidor)
 - [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
   - [13.1 Lado Cliente](#131-lado-cliente)
   - [13.2 Lado Servidor](#132-lado-servidor)
@@ -955,7 +955,7 @@ flowchart TB
 
 # 12. Requisitos de sistemas
 
-## 12.1. Requisitos do Lado Cliente
+## 12.1 Requisitos do Lado Cliente
 
 - **Hardware**: PC ou dispositivo móvel (celular ou tablet) com acesso à internet.
 
@@ -982,23 +982,50 @@ flowchart TB
   - Considerar a implementação de autenticação de dois fatores (2FA) para aumentar a segurança.
   - As credenciais de acesso devem ser protegidas e armazenadas de forma segura, conforme melhores práticas de segurança.
 
-
-## 12.2. Requisitos do Lado Servidor
+## 12.2 Requisitos do Lado Servidor
 
 - **Infraestrutura**:
   - Uma máquina física ou virtual para hospedar o sistema, configurada para desenvolvimento e produção de aplicações web.
+  
+- **Sistema Operacional**:
+  - Recomenda-se utilizar um sistema operacional como Linux (Ubuntu, CentOS) ou Windows Server.
+
+- **Processador**:
+  - Processador Intel Xeon ou AMD EPYC com no mínimo 4 núcleos e 2.5 GHz de frequência.
+
+- **Memória RAM**:
+  - Mínimo de 8 GB de RAM.
+
+- **Armazenamento**:
+  - SSD com pelo menos 100 GB de capacidade para o banco de dados e arquivos da aplicação.
+
+- **Rede**:
+  - Acesso à internet com largura de banda mínima de 10 Mbps e IP estático ou nome de domínio para acesso.
+
+- **Segurança**:
+  - Implementação de um certificado SSL para criptografia de dados.
+  - Firewall configurado para proteger o servidor.
+
 - **Servidores**:
   - Dois servidores distintos:
     - **Servidor de Aplicação**: Responsável por executar a aplicação e gerenciar a lógica de negócios.
     - **Servidor Web**: Responsável por servir páginas web e arquivos estáticos.
+
 - **Banco de Dados**:
   - Sistema de gerenciamento de banco de dados relacional para armazenar informações sobre clientes, animais, histórico de atendimentos, produtos e serviços.
+
 - **Aplicação**:
   - A aplicação deve ser implementada em um ambiente de backend que suporte a integração com o servidor de aplicação e o banco de dados.
+
 - **Conectividade**:
   - Acesso à internet para comunicação com serviços externos (por exemplo, envio de e-mails, notificações SMS, ou integração com gateways de pagamento).
+
 - **Escalabilidade**:
   - Capacidade de escalar horizontalmente o servidor de aplicação e o servidor web para suportar um número crescente de usuários.
+
+- **Backup**:
+  - Implementação de um serviço de backup regular, armazenando backups em nuvem ou em disco externo.
+
 
 # 13. Considerações sobre segurança
 
