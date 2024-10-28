@@ -868,7 +868,9 @@ classDiagram
 
 # 10. Diagrama de navegação de telas
 
-![Diagrama de Navegação de Telas]()
+![Diagrama de Navegação de Telas](https://github.com/Healzy1/icaro_reis/blob/main/diagrama_navegacao/navegacao.png)
+
+Para visualizar o diagrama completo no Figma, clique no seguinte link: [Visualizar Diagrama](https://www.figma.com/design/NZBOWMPtunzPckMCDzhwmJ/Untitled?node-id=0-1&t=yBc3WjcsGhrmP4uW-1)
 
 ```mermaid
 flowchart TD
