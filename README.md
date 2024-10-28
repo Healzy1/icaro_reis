@@ -95,6 +95,7 @@ Pagina da disciplina Engenharia de Software
 - [16 Script SQL](#16-script-sql)
   - [16.1. Comando CREATE table:](#161-comando-create-table)
   - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
+    - [16.2.1. Explicação dos dados fictícios](#1621-explicação-dos-dados-fictícios)
 
 # 1. Introdução
 
@@ -1034,7 +1035,6 @@ flowchart TB
 - **Regras de Senha**:
   - Senhas devem ter um comprimento mínimo de 8 caracteres.
   - Devem conter pelo menos um caractere especial, um número, uma letra maiúscula e uma letra minúscula.
-  - A aplicação deve forçar a troca de senha periódica para aumentar a segurança.
 
 - **Captcha**:
   - Implementação de CAPTCHA nos formulários de login para evitar ataques automatizados de força bruta.
@@ -1046,6 +1046,16 @@ flowchart TB
   - Recuperação de senha disponível via e-mail cadastrado.
   - Envio de um código de verificação para o e-mail do usuário para redefinir a senha.
   - O código enviado por e-mail deve expirar após um período de tempo definido (por exemplo, 15 minutos) para evitar tentativas indevidas.
+
+- **HTTPS**:
+  - A aplicação deve ser acessada exclusivamente através de HTTPS para garantir a criptografia dos dados transmitidos.
+
+- **Validação de Navegador**:
+  - A aplicação deve verificar se o usuário está utilizando um navegador suportado e atualizado para garantir a segurança e a funcionalidade.
+
+- **Validação de Páginas e Conteúdo**:
+  - Todas as entradas do usuário devem ser validadas para evitar injeções de código malicioso (como XSS).
+  - O conteúdo dinâmico deve ser sanitizado antes de ser exibido.
 
 ## 13.2 Lado Servidor
 
@@ -1064,11 +1074,34 @@ flowchart TB
   - O administrador do sistema não terá acesso direto aos dados pessoais dos usuários para proteger a privacidade e segurança das informações.
   - O acesso a dados sensíveis deve ser restrito apenas aos usuários com permissões específicas.
 
+- **Configuração de Pastas**:
+  - As pastas e arquivos sensíveis devem ter permissões restritas, garantindo que apenas usuários autorizados possam acessá-los.
+
+- **Verificação de Dados de Entrada**:
+  - Implementação de validações nos dados de entrada para evitar injeções de SQL e outros tipos de ataques, assegurando que apenas dados válidos sejam processados.
+
+- **Gerenciamento de Atualizações**:
+  - Estabelecer um plano de atualização regular que inclua a aplicação de patches de segurança, atualizações do sistema operacional e do software da aplicação.
+
+- **Hospedagem Segura**:
+  - O servidor deve ser hospedado em uma infraestrutura segura, com práticas de segurança adequadas do provedor, incluindo a proteção contra DDoS e backups regulares.
+
+- **Uso de Certificado no Servidor**:
+  - Implementar um certificado SSL/TLS para garantir que todas as comunicações entre o cliente e o servidor sejam criptografadas e seguras.
+
 - **Medidas Adicionais de Segurança**:
   - Implementação de firewall e regras de segurança de rede para proteger o servidor contra acessos não autorizados.
   - Monitoramento constante de atividades suspeitas e alertas em caso de tentativas de invasão.
   - Atualização regular dos softwares do servidor para corrigir vulnerabilidades de segurança.
 
+- **Sistema de Monitoramento e Alertas**:
+  - Implementação de um sistema de monitoramento para detectar e alertar sobre atividades anômalas, falhas no sistema e tentativas de intrusão.
+
+- **Sistema Automatizado de Backup**:
+  - Realização de backups automáticos conforme a política estabelecida, garantindo a recuperação dos dados em caso de falha ou perda.
+
+- **Serviços Gerando Logs**:
+  - Todos os serviços devem gerar logs detalhados das atividades, que serão utilizados para auditoria e detecção de eventos suspeitos.
 
 # 14. Manutenção, Instalação e Novas Funcionalidades
 
@@ -1115,7 +1148,6 @@ flowchart TB
       - Analisar se a funcionalidade é tecnicamente viável e compatível com o sistema atual. Se for possível, a implementação será realizada.
   - Somente após a aprovação em todos os três critérios, a nova funcionalidade será inserida no cronograma de desenvolvimento.
 
-
 # 15. Treinamento
 
 ## 15.1 Usuário
@@ -1127,6 +1159,24 @@ flowchart TB
 - **Acompanhamento Inicial**:
   - Disponibilizar suporte inicial para os novos usuários durante o período de adaptação ao sistema.
   - Criar uma seção de perguntas frequentes (FAQ) para ajudar na resolução de dúvidas comuns.
+
+- **Como Acessar o Sistema**:
+  - Orientações sobre como fazer login no sistema como usuário final.
+
+- **Principais Operações Básicas**:
+  - Instruções sobre como realizar operações comuns no sistema, como buscar informações ou realizar pedidos.
+
+- **Operações Especiais**:
+  - Orientações sobre como realizar operações específicas, como solicitações especiais ou alterações de dados.
+
+- **Backup (se estiver disponível)**:
+  - Informações sobre como os usuários podem realizar backup de seus dados, caso essa funcionalidade esteja disponível.
+
+- **Como Solicitar Suporte**:
+  - Instruções sobre como entrar em contato com o suporte técnico, incluindo canais de comunicação.
+
+- **Como Documentar Falhas**:
+  - Orientações sobre como registrar e reportar falhas ou problemas encontrados no sistema.
 
 ## 15.2 Admin
 
@@ -1142,6 +1192,26 @@ flowchart TB
   - Manter uma linha de suporte direto para administradores, oferecendo auxílio em questões mais técnicas e específicas.
   - Realizar revisões periódicas de conhecimentos para garantir que os administradores estejam atualizados com as últimas mudanças no sistema.
 
+- **Como Acessar o Sistema**:
+  - Instruções sobre como fazer login no painel de administração.
+
+- **Principais Operações Básicas**:
+  - Instruções sobre como realizar operações comuns, como adicionar usuários, editar configurações, etc.
+
+- **Operações Especiais**:
+  - Orientações sobre como executar operações menos frequentes, como a migração de dados ou atualizações do sistema.
+
+- **Backup do Sistema de Dados**:
+  - Explicações sobre como realizar backups manuais e automáticos, e a importância dessa prática.
+
+- **Como Restaurar o Sistema de Dados**:
+  - Instruções detalhadas sobre como restaurar dados a partir de um backup.
+
+- **Gerenciamento de Contas**:
+  - Diretrizes sobre como gerenciar contas de usuário, incluindo criação, edição e exclusão de contas.
+
+- **Configurações Necessárias dos Servidores e Clientes**:
+  - Informações sobre as configurações de servidores e clientes necessárias para o funcionamento adequado do sistema.
 
 # 16 Script SQL
 
@@ -1375,3 +1445,50 @@ INSERT INTO VeterinarioAnimal (veterinario_id, animal_id) VALUES
 animal
 
 ```
+
+### 16.2.1. Explicação dos dados fictícios
+
+- **Clientes**:
+  - João Silva, Maria Souza e Carlos Almeida são clientes da clínica, cada um com informações de contato, incluindo endereço, telefone e e-mail.
+
+- **Animais**:
+  - Rex (cachorro), Mia (gato) e Toby (cachorro) são os animais dos clientes, cada um com detalhes sobre espécie, raça, hábitos, tipo de ração e condição de chegada.
+
+- **Veterinários**:
+  - Dr. Paulo Fernandes, Dra. Ana Costa e Dr. Lucas Martins são os veterinários com especialidades em ortopedia, dermatologia e clínica geral, respectivamente.
+
+- **Atendentes**:
+  - Carla Ribeiro, Fernando Gomes e Mariana Dias são os atendentes responsáveis pelo atendimento dos clientes e pelo suporte durante as consultas.
+
+- **Atendimentos**:
+  - Registros de atendimentos realizados para cada animal, com informações sobre data, status da consulta, receita prescrita, veterinário responsável e atendente.
+
+- **Prontuários**:
+  - Observações e diagnósticos relacionados a cada consulta, detalhando as condições de saúde dos animais atendidos.
+
+- **Medicamentos**:
+  - Registros de medicamentos disponíveis na clínica, incluindo nome e quantidade em estoque.
+
+- **Rações**:
+  - Informações sobre os tipos de ração disponíveis na clínica, com nome e quantidade em estoque.
+
+- **Itens de Lazer**:
+  - Produtos de lazer para animais disponíveis na clínica, como bolas de borracha, arranhadores para gatos e camas para cachorros.
+
+- **Vacinas**:
+  - Registros de vacinas aplicadas nos animais, incluindo nome da vacina e data de aplicação.
+
+- **Feedback**:
+  - Comentários dos clientes sobre o atendimento recebido, expressando suas opiniões e experiências na clínica.
+
+- **Relatórios**:
+  - Relatórios gerados sobre consultas diárias e vendas de produtos, com números totais registrados.
+
+- **Notificações**:
+  - Mensagens enviadas aos clientes sobre lembretes de consultas e atualizações de status dos atendimentos.
+
+- **Suporte**:
+  - Registros de interações de suporte, incluindo tipos de solicitações e status dos tickets de atendimento.
+
+- **Veterinário-Animal**:
+  - Relação entre veterinários e os animais que atendem, indicando quais veterinários são responsáveis por quais animais.
