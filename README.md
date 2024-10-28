@@ -927,26 +927,29 @@ flowchart TD
 # 11. Pilha tecnológica
 
 ```mermaid
-graph TD
-    A[Hardware] --> B[Sistema Operacional]
-    B --> C[Serviços de Infraestrutura]
-    C --> D[Servidor de Aplicação]
-    D --> E[Backend]
-    D --> F[Frontend]
-    D --> G[Banco de Dados]
+flowchart TB
+    %% Server Side
+    subgraph "Server Side"
+        direction TB
+        A[BD - Banco de Dados] --> B[Servidor de Banco]
+        B --> C[Servidor Web]
+        C --> D[Componentes da App]
+    end
 
-    %% Detalhes dos serviços de infraestrutura
-    C --> C1[Nginx]
-    C --> C2[Docker]
+    %% Web
+    C --> E{Web}
 
-    %% Detalhes do backend
-    E --> E1[Node.js + Express]
+    %% Client Side
+    subgraph "Client Side"
+        direction TB
+        F[PC/Celular] --> G[SO]
+        G --> H[Browser Cliente Web]
+        H --> I[Javascript, C#, ASPX]
+        I --> J[Funcionalidades de Áudio e Vídeo]
+    end
 
-    %% Detalhes do frontend
-    F --> F1[React.js]
-
-    %% Detalhes do banco de dados
-    G --> G1[MongoDB]
+    %% Conexão entre Server Side e Client Side via Web
+    E --> H
 ```
 
 # 12. Requisitos de sistemas
