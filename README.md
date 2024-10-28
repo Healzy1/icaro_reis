@@ -868,6 +868,8 @@ classDiagram
 
 # 10. Diagrama de navegação de telas
 
+![Diagrama de Navegação de Telas]()
+
 ```mermaid
 flowchart TD
     A[Login] --> B[Menu Principal]
