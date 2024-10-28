@@ -928,43 +928,25 @@ flowchart TD
 
 ```mermaid
 graph TD
-    %% Frontend
-    A[Frontend] --> A1[HTML/CSS]
-    A --> A2[JavaScript]
-    A --> A3[Framework Frontend React/Vue.js]
-    A --> A4[Aplicação Mobile Flutter/React Native]
+    A[Hardware] --> B[Sistema Operacional]
+    B --> C[Serviços de Infraestrutura]
+    C --> D[Servidor de Aplicação]
+    D --> E[Backend]
+    D --> F[Frontend]
+    D --> G[Banco de Dados]
 
-    %% Backend
-    B[Backend] --> B1[Node.js/Express]
-    B --> B2[.NET Core]
-    B --> B3[Java Spring Boot]
+    %% Detalhes dos serviços de infraestrutura
+    C --> C1[Nginx]
+    C --> C2[Docker]
 
-    %% Banco de Dados
-    C[Banco de Dados] --> C1[MySQL]
-    C --> C2[PostgreSQL]
-    C --> C3[MongoDB]
+    %% Detalhes do backend
+    E --> E1[Node.js + Express]
 
-    %% Serviços Externos
-    D[Serviços Externos] --> D1[Serviço de Mensagens Twilio/SendGrid]
-    D --> D2[Gateway de Pagamento Stripe/PayPal]
-    D --> D3[Serviço de Notificações Firebase]
+    %% Detalhes do frontend
+    F --> F1[React.js]
 
-    %% Infraestrutura
-    E[Infraestrutura] --> E1[Servidor Web Nginx/Apache]
-    E --> E2[Servidor de Aplicação Docker/Kubernetes]
-    E --> E3[Cloud Provider AWS/Azure/GCP]
-
-    %% Ferramentas de Suporte
-    F[Ferramentas de Suporte] --> F1[Controle de Versão Git/GitHub]
-    F --> F2[Monitoramento Prometheus/Grafana]
-    F --> F3[CI/CD Jenkins/GitHub Actions]
-
-    %% Conexões
-    A --> B
-    B --> C
-    B --> D
-    B --> E
-    E --> F
+    %% Detalhes do banco de dados
+    G --> G1[MongoDB]
 ```
 
 # 12. Requisitos de sistemas
