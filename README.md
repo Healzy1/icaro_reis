@@ -5,6 +5,8 @@ Pagina da disciplina Engenharia de Software
 - [Icaro\_Reis](#icaro_reis)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do Negócio](#2-descrição-do-negócio)
+  - [2.1 Requisitos](#21-requisitos)
+    - [Requisitos Funcionais e Não Funcionais](#requisitos-funcionais-e-não-funcionais)
 - [3. Visão Geral do Sistema](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
   - [4.1 Descrição das Entidades e Relacionamentos](#41-descrição-das-entidades-e-relacionamentos)
@@ -43,59 +45,64 @@ Pagina da disciplina Engenharia de Software
     - [6.2.26 Controle de Estoque](#6226-controle-de-estoque)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de implantação](#8-diagrama-de-implantação)
-- [9. Protótipo de telas](#9-protótipo-de-telas)
-  - [9.1 Login](#91-login)
-  - [9.2 Tela Default - Dashboard](#92-tela-default---dashboard)
-  - [9.3 Relatório de Clientes](#93-relatório-de-clientes)
-    - [9.3.1 Registro de Clientes](#931-registro-de-clientes)
-  - [9.4 Relatório de Atendente](#94-relatório-de-atendente)
-    - [9.4.1 Registro de Atendente](#941-registro-de-atendente)
-  - [9.5 Relatório de Animais](#95-relatório-de-animais)
-    - [9.5.1 Registro de Animais](#951-registro-de-animais)
-  - [9.6 Relatório de Item Lazer](#96-relatório-de-item-lazer)
-    - [9.6.1 Registro de Item Lazer](#961-registro-de-item-lazer)
-  - [9.7 Relatório de Ração](#97-relatório-de-ração)
-    - [9.7.1 Registro de Ração](#971-registro-de-ração)
-  - [9.8 Relatório de Consultas](#98-relatório-de-consultas)
-    - [9.8.1 Registro de Consultas](#981-registro-de-consultas)
-  - [9.9 Relatório de Feedbacks](#99-relatório-de-feedbacks)
-    - [9.9.1 Registro de Feedbacks](#991-registro-de-feedbacks)
-  - [9.10 Relatório de Medicamentos](#910-relatório-de-medicamentos)
-    - [9.10.1 Registro de Medicamentos](#9101-registro-de-medicamentos)
-  - [9.11 Relatório de Notificações](#911-relatório-de-notificações)
-    - [9.11.1 Registro de Notificações](#9111-registro-de-notificações)
-  - [9.12 Relatório de Prontuários](#912-relatório-de-prontuários)
-    - [9.12.1 Registro de Prontuários](#9121-registro-de-prontuários)
-  - [9.13 Relatório de Vacinas](#913-relatório-de-vacinas)
-    - [9.13.1 Registro de Vacinas](#9131-registro-de-vacinas)
-  - [9.14 Gráficos](#914-gráficos)
-    - [9.14.1 Gráfico Saldo dos Clientes](#9141-gráfico-saldo-dos-clientes)
-    - [9.14.2 Gráfico Tipos de Ração Consumidas](#9142-gráfico-tipos-de-ração-consumidas)
-  - [9.15 Dashboard - Acesso via Menu](#915-dashboard---acesso-via-menu)
-  - [9.16 Alterar Senha](#916-alterar-senha)
-  - [9.17 Usuários](#917-usuários)
-  - [9.18 Configurações](#918-configurações)
-  - [9.19 Autenticação](#919-autenticação)
-  - [9.20 Sair do Sistema (Retorna para a tela de Login)](#920-sair-do-sistema-retorna-para-a-tela-de-login)
-- [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
-- [11. Pilha tecnológica](#11-pilha-tecnológica)
-- [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
-  - [12.1 Requisitos do Lado Cliente](#121-requisitos-do-lado-cliente)
-  - [12.2 Requisitos do Lado Servidor](#122-requisitos-do-lado-servidor)
-- [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
-  - [13.1 Lado Cliente](#131-lado-cliente)
-  - [13.2 Lado Servidor](#132-lado-servidor)
-- [14. Manutenção, Instalação e Novas Funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
-  - [14.1 Instalação no Servidor](#141-instalação-no-servidor)
-  - [14.2 Manutenção](#142-manutenção)
-  - [14.3 Novas Funcionalidades](#143-novas-funcionalidades)
-- [15. Treinamento](#15-treinamento)
-  - [15.1 Usuário](#151-usuário)
-  - [15.2 Admin](#152-admin)
-- [16 Script SQL](#16-script-sql)
-  - [16.1. Comando CREATE table:](#161-comando-create-table)
-  - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
-    - [16.2.1. Explicação dos dados fictícios](#1621-explicação-dos-dados-fictícios)
+- [9. Diagramas C4](#9-diagramas-c4)
+  - [9.1 Diagrama de Contexto](#91-diagrama-de-contexto)
+  - [9.2 Diagrama de Container](#92-diagrama-de-container)
+  - [9.3 Diagrama de Componente](#93-diagrama-de-componente)
+  - [9.4 Diagrama de Código](#94-diagrama-de-código)
+- [10. Protótipo de telas](#10-protótipo-de-telas)
+  - [10.1 Login](#101-login)
+  - [10.2 Tela Default - Dashboard](#102-tela-default---dashboard)
+  - [10.3 Relatório de Clientes](#103-relatório-de-clientes)
+    - [10.3.1 Registro de Clientes](#1031-registro-de-clientes)
+  - [10.4 Relatório de Atendente](#104-relatório-de-atendente)
+    - [10.4.1 Registro de Atendente](#1041-registro-de-atendente)
+  - [10.5 Relatório de Animais](#105-relatório-de-animais)
+    - [10.5.1 Registro de Animais](#1051-registro-de-animais)
+  - [10.6 Relatório de Item Lazer](#106-relatório-de-item-lazer)
+    - [10.6.1 Registro de Item Lazer](#1061-registro-de-item-lazer)
+  - [10.7 Relatório de Ração](#107-relatório-de-ração)
+    - [10.7.1 Registro de Ração](#1071-registro-de-ração)
+  - [10.8 Relatório de Consultas](#108-relatório-de-consultas)
+    - [10.8.1 Registro de Consultas](#1081-registro-de-consultas)
+  - [10.9 Relatório de Feedbacks](#109-relatório-de-feedbacks)
+    - [10.9.1 Registro de Feedbacks](#1091-registro-de-feedbacks)
+  - [10.10 Relatório de Medicamentos](#1010-relatório-de-medicamentos)
+    - [10.10.1 Registro de Medicamentos](#10101-registro-de-medicamentos)
+  - [10.11 Relatório de Notificações](#1011-relatório-de-notificações)
+    - [10.11.1 Registro de Notificações](#10111-registro-de-notificações)
+  - [10.12 Relatório de Prontuários](#1012-relatório-de-prontuários)
+    - [10.12.1 Registro de Prontuários](#10121-registro-de-prontuários)
+  - [10.13 Relatório de Vacinas](#1013-relatório-de-vacinas)
+    - [10.13.1 Registro de Vacinas](#10131-registro-de-vacinas)
+  - [10.14 Gráficos](#1014-gráficos)
+    - [10.14.1 Gráfico Saldo dos Clientes](#10141-gráfico-saldo-dos-clientes)
+    - [10.14.2 Gráfico Tipos de Ração Consumidas](#10142-gráfico-tipos-de-ração-consumidas)
+  - [10.15 Dashboard - Acesso via Menu](#1015-dashboard---acesso-via-menu)
+  - [10.16 Alterar Senha](#1016-alterar-senha)
+  - [10.17 Usuários](#1017-usuários)
+  - [10.18 Configurações](#1018-configurações)
+  - [10.19 Autenticação](#1019-autenticação)
+  - [10.20 Sair do Sistema (Retorna para a tela de Login)](#1020-sair-do-sistema-retorna-para-a-tela-de-login)
+- [11. Diagrama de navegação de telas](#11-diagrama-de-navegação-de-telas)
+- [12. Pilha tecnológica](#12-pilha-tecnológica)
+- [13. Requisitos de sistemas](#13-requisitos-de-sistemas)
+  - [13.1 Requisitos do Lado Cliente](#131-requisitos-do-lado-cliente)
+  - [13.2 Requisitos do Lado Servidor](#132-requisitos-do-lado-servidor)
+- [14. Considerações sobre segurança](#14-considerações-sobre-segurança)
+  - [14.1 Lado Cliente](#141-lado-cliente)
+  - [14.2 Lado Servidor](#142-lado-servidor)
+- [15. Manutenção, Instalação e Novas Funcionalidades](#15-manutenção-instalação-e-novas-funcionalidades)
+  - [15.1 Instalação no Servidor](#151-instalação-no-servidor)
+  - [15.2 Manutenção](#152-manutenção)
+  - [15.3 Novas Funcionalidades](#153-novas-funcionalidades)
+- [16. Treinamento](#16-treinamento)
+  - [16.1 Usuário](#161-usuário)
+  - [16.2 Admin](#162-admin)
+- [17 Script SQL](#17-script-sql)
+  - [17.1. Comando CREATE table:](#171-comando-create-table)
+  - [17.2. Comandos INSERT gerando dados fictícios](#172-comandos-insert-gerando-dados-fictícios)
+    - [17.2.1. Explicação dos dados fictícios](#1721-explicação-dos-dados-fictícios)
 
 # 1. Introdução
 
@@ -164,6 +171,38 @@ Descrição do cenário onde o sistema deverá funcionar.
 29. O sistema deve oferecer um canal de suporte ao cliente, como um chat online ou um sistema de tickets, para resolver dúvidas e problemas de forma eficiente.
 
 30. O sistema deve permitir o registro das vacinas que cada animal recebeu, com datas e tipos de vacina.
+
+## 2.1 Requisitos
+
+### Requisitos Funcionais e Não Funcionais
+
+| **ID** | **Requisito**                                                     | **Tipo**            | **Descrição**                                                                                                                                           |
+|--------|-------------------------------------------------------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| RF01   | Cadastro de Clientes e Animais                                    | Funcional          | Permitir o cadastro de clientes e de seus animais (cachorros e gatos), com informações de condição, hábitos e tipo de ração.                             |
+| RF02   | Agenda de Consultas                                               | Funcional          | Permitir o agendamento de consultas, inclusive com marcação para horários futuros.                                                                       |
+| RF03   | Ficha e Prontuário do Animal                                      | Funcional          | Criar fichas e prontuários detalhados para cada animal atendido, contendo histórico de diagnósticos e tratamentos.                                       |
+| RF04   | Multiplos Veterinários                                            | Funcional          | Permitir que cada animal seja atendido por mais de um veterinário, conforme necessidade.                                                                  |
+| RF05   | Atendimento por Agenda e Fila de Espera                           | Funcional          | Organizar o atendimento por meio de uma agenda diária e controlar uma fila de espera para os clientes, se necessário.                                    |
+| RF06   | Entrevista e Anotações no Prontuário                              | Funcional          | Permitir que o veterinário realize uma entrevista com o dono do animal e registre observações e diagnósticos no prontuário.                              |
+| RF07   | Emissão de Receita                                                | Funcional          | Gerar uma receita médica para o animal, caso necessário.                                                                                                 |
+| RF08   | Venda de Produtos e Controle de Estoque                           | Funcional          | Gerenciar a venda de medicamentos genéricos, rações de tratamento e itens de lazer, com controle de estoque e alertas de níveis baixos.                 |
+| RF09   | Comunicação e Notificações                                        | Funcional          | Informar o cliente sobre o andamento do atendimento e enviar lembretes de consultas via SMS ou email.                                                    |
+| RF10   | Agendamento e Acompanhamento Online                               | Funcional          | Permitir que os clientes agendem consultas e acompanhem o status do atendimento online.                                                                  |
+| RF11   | Histórico de Atendimentos                                         | Funcional          | Manter um histórico detalhado dos atendimentos, diagnósticos, tratamentos e medicamentos prescritos para cada animal.                                    |
+| RF12   | Relatórios Gerenciais                                             | Funcional          | Gerar relatórios sobre atendimentos, vendas e controle de estoque para auxiliar na tomada de decisões.                                                   |
+| RF13   | Feedback do Cliente                                               | Funcional          | Permitir que os clientes deixem feedback sobre os serviços prestados.                                                                                    |
+| RF14   | Suporte ao Cliente                                                | Funcional          | Oferecer um canal de suporte (chat online ou sistema de tickets) para dúvidas e resolução de problemas dos clientes.                                     |
+| RF15   | Registro de Vacinas                                               | Funcional          | Permitir o registro das vacinas recebidas por cada animal, com datas e tipos de vacina.                                                                  |
+| RNF01  | Segurança dos Dados                                               | Não Funcional      | Garantir a segurança dos dados de clientes e animais, protegendo informações confidenciais e de saúde.                                                   |
+| RNF02  | Usabilidade                                                       | Não Funcional      | Proporcionar uma interface amigável para clientes e funcionários, simplificando o uso do sistema para agendamento e registro de informações.             |
+| RNF03  | Confiabilidade                                                    | Não Funcional      | Assegurar que o sistema seja confiável, sem falhas que comprometam a agenda, o atendimento ou os dados históricos dos animais.                           |
+| RNF04  | Performance                                                       | Não Funcional      | Garantir que o sistema responda rapidamente às solicitações dos usuários, principalmente no agendamento e acompanhamento do atendimento.                 |
+| RNF05  | Escalabilidade                                                    | Não Funcional      | Permitir que o sistema suporte um número crescente de clientes, animais e atendimentos sem perda de performance.                                         |
+| RNF06  | Backup e Recuperação                                              | Não Funcional      | Implementar um sistema de backup e recuperação de dados para prevenir perda de informações em casos de falhas.                                           |
+| RNF07  | Notificações em Tempo Real                                        | Não Funcional      | Garantir o envio de notificações em tempo real via SMS e email, para avisos de consultas e atualizações de atendimento.                                  |
+| RNF08  | Compatibilidade com Dispositivos Móveis                           | Não Funcional      | O sistema deve ser compatível com dispositivos móveis, permitindo acesso e agendamento pelo celular ou tablet.                                           |
+| RNF09  | Manutenibilidade                                                  | Não Funcional      | Facilitar a manutenção e atualização do sistema, com código modular e documentação detalhada.                                                            |
+| RNF10  | Conformidade com Regulamentações                                  | Não Funcional      | Atender a regulamentações e normas de proteção de dados e de saúde para sistemas de clínicas veterinárias.                                               |
 
 # 3. Visão Geral do Sistema
 
@@ -325,6 +364,7 @@ erDiagram
 - **CLIENTE** pode receber várias **NOTIFICACAO**s.
 - **CLIENTE** pode solicitar vários **SUPORTE**s.
 
+[Voltar ao Início](#icaro_reis)
 
 # 5. Diagrama de classe
 
@@ -735,139 +775,240 @@ classDiagram
 
 ![Diagrama de Implantação](https://github.com/Healzy1/icaro_reis/blob/main/diagrama_implantacao/Diagrama_implantacao.png)
 
-# 9. Protótipo de telas
+# 9. Diagramas C4
 
-## 9.1 Login
+## 9.1 Diagrama de Contexto
+
+```mermaid
+graph TD
+    Cliente -->|Agendar consulta, cadastrar animal| Sistema[Clínica Veterinária - Sistema de Gerenciamento]
+    Sistema -->|Informar status do atendimento, enviar lembretes, permitir agendamento online| Cliente
+    Sistema -->|Registrar atendimentos, receitas e históricos| Veterinário
+    Veterinário -->|Consulta animal e anota observações| Sistema
+    Sistema -->|Controle de estoque e venda de produtos| Estoque
+    Estoque -->|Alerta de baixo estoque| Sistema
+    Sistema -->|Acompanhar fila e organizar agenda| Atendente
+    Atendente -->|Leva cliente e animal ao veterinário| Sistema
+    Sistema -->|Registrar feedback e suportar atendimento online| Cliente
+```
+
+## 9.2 Diagrama de Container
+
+```mermaid
+graph TD
+    Sistema[Clínica Veterinária - Sistema de Gerenciamento] --> WebApp[WebApp para Clientes]
+    Sistema --> BancoDados[Banco de Dados]
+    Sistema --> Backend[Backend da Aplicação]
+    WebApp -->|Acesso online para agendamentos, status do atendimento, feedback| Cliente
+    Backend -->|Registra e gerencia dados de atendimentos, fichas e estoque| BancoDados
+    Backend -->|Interage com o Atendente para gestão da fila e agenda| Atendente
+    Backend -->|Permite acesso aos veterinários para atualização de fichas e prontuários| Veterinário
+    BancoDados -->|Armazena informações de produtos, estoque, históricos e clientes| Backend
+    Backend --> SistemaNotificacoes[Sistema de Notificações]
+    SistemaNotificacoes -->|Envio de SMS e emails para lembretes de consultas| Cliente
+```
+
+## 9.3 Diagrama de Componente
+
+```mermaid
+graph TD
+    Backend --> Atendimento[Componente de Atendimento]
+    Backend --> Agendamento[Componente de Agendamento]
+    Backend --> Notificacao[Componente de Notificação]
+    Backend --> Estoque[Componente de Controle de Estoque]
+    Backend --> Relatorios[Componente de Relatórios Gerenciais]
+    Backend --> Fichas[Componente de Fichas e Prontuários]
+    Atendimento -->|Gerencia fila de espera e atendimento| Atendente
+    Agendamento -->|Permite agendamento e gerenciamento de consultas| Cliente
+    Notificacao -->|Envia SMS e email com status e lembretes| Cliente
+    Estoque -->|Controla estoque e alerta de baixos níveis| Backend
+    Relatorios -->|Gera relatórios de atendimentos e vendas| Administrador
+    Fichas -->|Armazena histórico de atendimentos e receitas| Veterinário
+    WebApp --> InterfaceCliente[Interface para Cliente]
+    InterfaceCliente -->|Permite feedback e acompanhamento do atendimento| Cliente
+```
+
+## 9.4 Diagrama de Código
+
+```mermaid
+graph TD
+    App[Aplicação - Frontend]
+    API[API REST - Backend]
+    DB[Banco de Dados]
+
+    App --> API
+    API --> DB
+
+    subgraph Aplicação Cliente
+        Interface[Interface de Usuário]
+        Interface -->|Agendamento, Status e Feedback| API
+    end
+
+    subgraph API REST
+        AgendamentoAPI[API de Agendamento]
+        AtendimentoAPI[API de Atendimento]
+        NotificacaoAPI[API de Notificações]
+        EstoqueAPI[API de Estoque]
+        RelatoriosAPI[API de Relatórios]
+        FichasAPI[API de Fichas Médicas]
+
+        AgendamentoAPI --> BancoDados
+        AtendimentoAPI --> BancoDados
+        NotificacaoAPI --> BancoDados
+        EstoqueAPI --> BancoDados
+        RelatoriosAPI --> BancoDados
+        FichasAPI --> BancoDados
+    end
+
+    subgraph Banco de Dados
+        TabelaClientes[Tabela Clientes]
+        TabelaAnimais[Tabela Animais]
+        TabelaAtendimentos[Tabela Atendimentos]
+        TabelaEstoque[Tabela Estoque]
+        TabelaFeedbacks[Tabela Feedbacks]
+
+        AgendamentoAPI --> TabelaClientes
+        AtendimentoAPI --> TabelaAnimais
+        EstoqueAPI --> TabelaEstoque
+        RelatoriosAPI --> TabelaAtendimentos
+        FichasAPI --> TabelaAtendimentos
+    end
+
+```
+
+# 10. Protótipo de telas
+
+## 10.1 Login
 
 ![Login](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/login.png)
 
-## 9.2 Tela Default - Dashboard
+## 10.2 Tela Default - Dashboard
 
 ![Tela Deafault - Dashboard](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/dashboard.png)
 
-## 9.3 Relatório de Clientes
+## 10.3 Relatório de Clientes
 
 ![Relatório de Clientes](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_cliente.png)
 
-### 9.3.1 Registro de Clientes
+### 10.3.1 Registro de Clientes
 
 ![Registro de Clientes](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_cliente.png)
 
-## 9.4 Relatório de Atendente
+## 10.4 Relatório de Atendente
 
 ![Relatório de Atendente](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_atendente.png)
 
-### 9.4.1 Registro de Atendente
+### 10.4.1 Registro de Atendente
 
 ![Registro de Atendente](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_atendente.png)
 
-## 9.5 Relatório de Animais
+## 10.5 Relatório de Animais
 
 ![Relatório de Animais](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_animais.png)
 
-### 9.5.1 Registro de Animais
+### 10.5.1 Registro de Animais
 
 ![Registro de AtendenAnimaiste](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_animais.png)
 
-## 9.6 Relatório de Item Lazer
+## 10.6 Relatório de Item Lazer
 
 ![Relatório de Lazer](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_lazer.png)
 
-### 9.6.1 Registro de Item Lazer
+### 10.6.1 Registro de Item Lazer
 
 ![Registro de Lazer](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_lazer.png)
 
-## 9.7 Relatório de Ração
+## 10.7 Relatório de Ração
 
 ![Relatório de Ração](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_racao.png)
 
-### 9.7.1 Registro de Ração
+### 10.7.1 Registro de Ração
 
 ![Registro de Ração](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_racao.png)
 
-## 9.8 Relatório de Consultas
+## 10.8 Relatório de Consultas
 
 ![Relatório de Consultas](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_consultas.png)
 
-### 9.8.1 Registro de Consultas
+### 10.8.1 Registro de Consultas
 
 ![Registro de Consultas](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_consultas.png)
 
-## 9.9 Relatório de Feedbacks
+## 10.9 Relatório de Feedbacks
 
 ![Relatório de Feedbacks](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_feedback.png)
 
-### 9.9.1 Registro de Feedbacks
+### 10.9.1 Registro de Feedbacks
 
 ![Registro de Feedbacks](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_feedback.png)
 
-## 9.10 Relatório de Medicamentos
+## 10.10 Relatório de Medicamentos
 
 ![Relatório de Medicamentos](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_medicamento.png)
 
-### 9.10.1 Registro de Medicamentos
+### 10.10.1 Registro de Medicamentos
 
 ![Registro de Medicamentos](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_medicamento.png)
 
-## 9.11 Relatório de Notificações
+## 10.11 Relatório de Notificações
 
 ![Relatório de Notificações](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_notificacoes.png)
 
-### 9.11.1 Registro de Notificações
+### 10.11.1 Registro de Notificações
 
 ![Registro de Notificações](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_notificacoes.png)
 
-## 9.12 Relatório de Prontuários
+## 10.12 Relatório de Prontuários
 
 ![Relatório de Prontuários](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_prontuario.png)
 
-### 9.12.1 Registro de Prontuários
+### 10.12.1 Registro de Prontuários
 
 ![Registro de Prontuários](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_prontuario.png)
 
-## 9.13 Relatório de Vacinas
+## 10.13 Relatório de Vacinas
 
 ![Relatório de Vacinas](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/relatorio_vacina.png)
 
-### 9.13.1 Registro de Vacinas
+### 10.13.1 Registro de Vacinas
 
 ![Registro de Vacinas](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/registro_vacina.png)
 
-## 9.14 Gráficos
+## 10.14 Gráficos
 
-### 9.14.1 Gráfico Saldo dos Clientes
+### 10.14.1 Gráfico Saldo dos Clientes
 
 ![Gráfico Saldo dos Clientes](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/grafico_saldoClientes.png)
 
-### 9.14.2 Gráfico Tipos de Ração Consumidas
+### 10.14.2 Gráfico Tipos de Ração Consumidas
 
 ![Gráfico Tipos de Ração Consumidas](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/grafico_tiposRacao.png)
 
-## 9.15 Dashboard - Acesso via Menu
+## 10.15 Dashboard - Acesso via Menu
 
 ![Dashboard - Acesso via Menu](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/dashboard_inMenu.png)
 
-## 9.16 Alterar Senha
+## 10.16 Alterar Senha
 
 ![Alterar Senha](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/alterar_senha.png)
 
-## 9.17 Usuários
+## 10.17 Usuários
 
 ![Usuários](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/usuarios.png)
 
-## 9.18 Configurações
+## 10.18 Configurações
 
 ![Configurações](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/configuracoes.png)
 
-## 9.19 Autenticação
+## 10.19 Autenticação
 
 ![Autenticação](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/autenticacao.png)
 
-## 9.20 Sair do Sistema (Retorna para a tela de Login)
+## 10.20 Sair do Sistema (Retorna para a tela de Login)
 
 ![Sair do Sistema](https://github.com/Healzy1/icaro_reis/blob/main/prototipo_telas/sair.png)
 
-# 10. Diagrama de navegação de telas
+# 11. Diagrama de navegação de telas
 
 ![Diagrama de Navegação de Telas](https://github.com/Healzy1/icaro_reis/blob/main/diagrama_navegacao/navegacao.png)
 
@@ -925,7 +1066,7 @@ flowchart TD
 
 ```
 
-# 11. Pilha tecnológica
+# 12. Pilha tecnológica
 
 ```mermaid
 flowchart TB
@@ -954,9 +1095,9 @@ flowchart TB
     E <--> H
 ```
 
-# 12. Requisitos de sistemas
+# 13. Requisitos de sistemas
 
-## 12.1 Requisitos do Lado Cliente
+## 13.1 Requisitos do Lado Cliente
 
 - **Hardware**: PC ou dispositivo móvel (celular ou tablet) com acesso à internet.
 
@@ -983,7 +1124,7 @@ flowchart TB
   - Considerar a implementação de autenticação de dois fatores (2FA) para aumentar a segurança.
   - As credenciais de acesso devem ser protegidas e armazenadas de forma segura, conforme melhores práticas de segurança.
 
-## 12.2 Requisitos do Lado Servidor
+## 13.2 Requisitos do Lado Servidor
 
 - **Infraestrutura**:
   - Uma máquina física ou virtual para hospedar o sistema, configurada para desenvolvimento e produção de aplicações web.
@@ -1028,9 +1169,9 @@ flowchart TB
   - Implementação de um serviço de backup regular, armazenando backups em nuvem ou em disco externo.
 
 
-# 13. Considerações sobre segurança
+# 14. Considerações sobre segurança
 
-## 13.1 Lado Cliente
+## 14.1 Lado Cliente
 
 - **Regras de Senha**:
   - Senhas devem ter um comprimento mínimo de 8 caracteres.
@@ -1057,7 +1198,7 @@ flowchart TB
   - Todas as entradas do usuário devem ser validadas para evitar injeções de código malicioso (como XSS).
   - O conteúdo dinâmico deve ser sanitizado antes de ser exibido.
 
-## 13.2 Lado Servidor
+## 14.2 Lado Servidor
 
 - **Sistema Operacional**:
   - O servidor deve ser configurado com um sistema operacional Linux para maior segurança e estabilidade.
@@ -1103,9 +1244,9 @@ flowchart TB
 - **Serviços Gerando Logs**:
   - Todos os serviços devem gerar logs detalhados das atividades, que serão utilizados para auditoria e detecção de eventos suspeitos.
 
-# 14. Manutenção, Instalação e Novas Funcionalidades
+# 15. Manutenção, Instalação e Novas Funcionalidades
 
-## 14.1 Instalação no Servidor
+## 15.1 Instalação no Servidor
 
 - **Procedimentos de Instalação**:
   - O sistema deve ser instalado diretamente no servidor, com a configuração adequada do ambiente de produção (Linux) e dos serviços necessários, como servidor web e banco de dados.
@@ -1115,7 +1256,7 @@ flowchart TB
 - **Ambiente de Testes**:
   - Deve existir um ambiente de testes separado do ambiente de produção para validar atualizações e novas funcionalidades antes de implementá-las no servidor principal.
 
-## 14.2 Manutenção
+## 15.2 Manutenção
 
 - **Manutenção Preventiva**:
   - Realizar verificações periódicas no sistema para garantir que está funcionando corretamente e identificar possíveis falhas.
@@ -1129,7 +1270,7 @@ flowchart TB
   - Disponibilizar uma equipe de suporte para lidar com problemas técnicos e auxiliar os usuários.
   - Utilizar um sistema de tickets para gerenciar solicitações de suporte e acompanhar a resolução.
 
-## 14.3 Novas Funcionalidades
+## 15.3 Novas Funcionalidades
 
 - **Formalização do Pedido**:
   - Todos os pedidos de novas funcionalidades devem ser formalizados por escrito, especificando os requisitos e expectativas.
@@ -1148,9 +1289,9 @@ flowchart TB
       - Analisar se a funcionalidade é tecnicamente viável e compatível com o sistema atual. Se for possível, a implementação será realizada.
   - Somente após a aprovação em todos os três critérios, a nova funcionalidade será inserida no cronograma de desenvolvimento.
 
-# 15. Treinamento
+# 16. Treinamento
 
-## 15.1 Usuário
+## 16.1 Usuário
 
 - **Materiais de Treinamento**:
   - Disponibilizar vídeos explicativos na web, com tutoriais detalhados sobre o uso do sistema e suas funcionalidades principais.
@@ -1178,7 +1319,7 @@ flowchart TB
 - **Como Documentar Falhas**:
   - Orientações sobre como registrar e reportar falhas ou problemas encontrados no sistema.
 
-## 15.2 Admin
+## 16.2 Admin
 
 - **Materiais de Treinamento**:
   - Disponibilizar vídeos específicos para os administradores, com tutoriais sobre as funcionalidades avançadas e o gerenciamento do sistema.
@@ -1213,9 +1354,9 @@ flowchart TB
 - **Configurações Necessárias dos Servidores e Clientes**:
   - Informações sobre as configurações de servidores e clientes necessárias para o funcionamento adequado do sistema.
 
-# 16 Script SQL
+# 17 Script SQL
 
-## 16.1. Comando CREATE table:
+## 17.1. Comando CREATE table:
 
 ```SQL
 
@@ -1351,7 +1492,7 @@ CREATE TABLE VeterinarioAnimal (
 
 ```
 
-## 16.2. Comandos INSERT gerando dados fictícios
+## 17.2. Comandos INSERT gerando dados fictícios
 
 ```SQL
 
@@ -1446,7 +1587,7 @@ animal
 
 ```
 
-### 16.2.1. Explicação dos dados fictícios
+### 17.2.1. Explicação dos dados fictícios
 
 - **Clientes**:
   - João Silva, Maria Souza e Carlos Almeida são clientes da clínica, cada um com informações de contato, incluindo endereço, telefone e e-mail.
